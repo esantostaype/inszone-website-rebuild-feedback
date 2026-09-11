@@ -1,0 +1,14 @@
+---
+/** Iconos HugeIcons, guardados como markup en content.json. */
+import { icons } from '../data/content'
+
+interface Props {
+  name: string
+}
+
+const { name } = Astro.props
+const svg = icons[ name ]
+if ( !svg ) throw new Error( `No existe el icono "${ name }"` )
+---
+
+<Fragment set:html={svg} />

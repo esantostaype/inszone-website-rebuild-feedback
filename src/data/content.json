@@ -1,0 +1,1756 @@
+{
+  "pages": [
+    {
+      "file": "index.html",
+      "key": "general",
+      "nav": {
+        "es": "General",
+        "en": "General"
+      },
+      "icon": "globe",
+      "crumb": {
+        "es": "Feedback del rediseño",
+        "en": "Redesign feedback"
+      },
+      "title": {
+        "es": "Comentarios generales",
+        "en": "General comments"
+      },
+      "lead": {
+        "es": "Observaciones que aplican a todo el website, sin importar la página. Son la base sobre la que se revisa cada plantilla en particular.",
+        "en": "Observations that apply to the whole website, regardless of the page. They are the baseline for reviewing each individual template."
+      }
+    },
+    {
+      "file": "home.html",
+      "key": "home",
+      "nav": {
+        "es": "Home",
+        "en": "Home"
+      },
+      "icon": "home",
+      "crumb": {
+        "es": "Página · Desktop y responsive",
+        "en": "Page · Desktop and responsive"
+      },
+      "title": {
+        "es": "Homepage",
+        "en": "Homepage"
+      },
+      "lead": {
+        "es": "Revisión sección por sección de la página de inicio. Haz clic en cualquier captura para verla en detalle: la flecha o el recuadro rojo señala el punto exacto del comentario.",
+        "en": "Section-by-section review of the home page. Click any screenshot to see it in detail: the red arrow or box marks the exact spot the comment refers to."
+      }
+    },
+    {
+      "file": "product-page.html",
+      "key": "product",
+      "nav": {
+        "es": "Product Page",
+        "en": "Product Page"
+      },
+      "icon": "shield",
+      "crumb": {
+        "es": "Página · Producto / Insurance",
+        "en": "Page · Product / Insurance"
+      },
+      "title": {
+        "es": "Product Page",
+        "en": "Product Page"
+      },
+      "lead": {
+        "es": "Plantilla de producto de seguro (Personal, Commercial, Benefits) y su navegación interna.",
+        "en": "Insurance product template (Personal, Commercial, Benefits) and its internal navigation."
+      }
+    },
+    {
+      "file": "locations.html",
+      "key": "locations",
+      "nav": {
+        "es": "Locations",
+        "en": "Locations"
+      },
+      "icon": "pin",
+      "crumb": {
+        "es": "Página · Find Location",
+        "en": "Page · Find Location"
+      },
+      "title": {
+        "es": "Locations",
+        "en": "Locations"
+      },
+      "lead": {
+        "es": "Buscador de oficinas, listado por estado y ficha de cada localidad.",
+        "en": "Office finder, listing by state and each location's detail page."
+      }
+    },
+    {
+      "file": "about-us.html",
+      "key": "about",
+      "nav": {
+        "es": "About Us",
+        "en": "About Us"
+      },
+      "icon": "users",
+      "crumb": {
+        "es": "Página · Compañía",
+        "en": "Page · Company"
+      },
+      "title": {
+        "es": "About Us",
+        "en": "About Us"
+      },
+      "lead": {
+        "es": "Historia, equipo, carreras y todo el contenido institucional.",
+        "en": "History, team, careers and all institutional content."
+      }
+    },
+    {
+      "file": "mergers-acquisitions.html",
+      "key": "ma",
+      "nav": {
+        "es": "Mergers & Acquisitions",
+        "en": "Mergers & Acquisitions"
+      },
+      "icon": "merge",
+      "crumb": {
+        "es": "Página · Mergers & Acquisitions",
+        "en": "Page · Mergers & Acquisitions"
+      },
+      "title": {
+        "es": "Mergers & Acquisitions",
+        "en": "Mergers & Acquisitions"
+      },
+      "lead": {
+        "es": "Landing de adquisiciones: propuesta de valor, servicios y testimonios de los dueños de las agencias adquiridas.",
+        "en": "Acquisitions landing page: value proposition, services and testimonials from the owners of acquired agencies."
+      }
+    },
+    {
+      "file": "careers.html",
+      "key": "careers",
+      "nav": {
+        "es": "Careers",
+        "en": "Careers"
+      },
+      "icon": "briefcase",
+      "crumb": {
+        "es": "Página · Careers",
+        "en": "Page · Careers"
+      },
+      "title": {
+        "es": "Careers",
+        "en": "Careers"
+      },
+      "lead": {
+        "es": "Página de empleo: listado de posiciones, filtros y testimonios del equipo.",
+        "en": "Jobs page: position listing, filters and team testimonials."
+      }
+    },
+    {
+      "file": "contact-us.html",
+      "key": "contact",
+      "nav": {
+        "es": "Contact Us",
+        "en": "Contact Us"
+      },
+      "icon": "mail",
+      "crumb": {
+        "es": "Página · Contacto",
+        "en": "Page · Contact"
+      },
+      "title": {
+        "es": "Contact Us",
+        "en": "Contact Us"
+      },
+      "lead": {
+        "es": "Formularios de contacto, datos de la oficina y flujo de solicitud de cotización.",
+        "en": "Contact forms, office details and the quote request flow."
+      }
+    },
+    {
+      "file": "blog.html",
+      "key": "blog",
+      "nav": {
+        "es": "Blog & Resources",
+        "en": "Blog & Resources"
+      },
+      "icon": "news",
+      "crumb": {
+        "es": "Página · Recursos",
+        "en": "Page · Resources"
+      },
+      "title": {
+        "es": "Blog & Resources",
+        "en": "Blog & Resources"
+      },
+      "lead": {
+        "es": "Listado de artículos, ficha del post y el resto de la sección de recursos.",
+        "en": "Article listing, post detail and the rest of the resources section."
+      }
+    }
+  ],
+  "content": {
+    "general": [
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Scroll suave en todo el website",
+          "en": "Smooth scrolling across the website"
+        },
+        "body": [
+          {
+            "es": "Todo el website debe tener <b>scroll suave (smooth scrolling)</b>. Puede resolverse con una librería o con código nativo; lo importante es que la sensación de desplazamiento sea la misma en todas las páginas.",
+            "en": "The whole website must have <b>smooth scrolling</b>. It can be done with a library or with native code; what matters is that the scrolling feel is identical on every page."
+          }
+        ],
+        "ok": {
+          "es": "Al desplazarse con la rueda del mouse, el scroll frena de forma progresiva en lugar de cortarse de golpe, y se comporta igual en todas las páginas.",
+          "en": "Scrolling with the mouse wheel eases to a stop instead of cutting off abruptly, and behaves the same on every page."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Locomotive Scroll (lo usado en la referencia)",
+              "en": "Locomotive Scroll (used in the reference)"
+            },
+            "url": "https://scroll.locomotive.ca/"
+          },
+          {
+            "label": {
+              "es": "GSAP ScrollSmoother",
+              "en": "GSAP ScrollSmoother"
+            },
+            "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/"
+          },
+          {
+            "label": {
+              "es": "Sitio de referencia",
+              "en": "Reference site"
+            },
+            "url": "https://inszoneinsurance.vercel.app/"
+          }
+        ]
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Aparición de los elementos al hacer scroll",
+          "en": "Scroll reveal on every element"
+        },
+        "body": [
+          {
+            "es": "Todos los elementos del website deben <b>aparecer a medida que el usuario baja</b>, en lugar de estar visibles desde el inicio.",
+            "en": "Every element on the website must <b>appear as the user scrolls down</b>, instead of being visible from the start."
+          },
+          {
+            "es": "Un <code>fade-up</code> sencillo, tipo <b>data-aos=\"fade-up\"</b>, alcanza para todos los elementos. GSAP también tiene esta funcionalidad.",
+            "en": "A simple <code>fade-up</code>, like <b>data-aos=\"fade-up\"</b>, is enough for every element. GSAP also provides this."
+          }
+        ],
+        "ok": {
+          "es": "Al recargar cualquier página, lo que está por debajo del primer pantallazo no se ve hasta que el scroll llega a esa sección.",
+          "en": "On reloading any page, anything below the first viewport stays hidden until the scroll reaches that section."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "AOS — ejemplos de la animación",
+              "en": "AOS — animation examples"
+            },
+            "url": "https://michalsnik.github.io/aos/"
+          },
+          {
+            "label": {
+              "es": "Sitio de referencia",
+              "en": "Reference site"
+            },
+            "url": "https://inszoneinsurance.vercel.app/"
+          },
+          {
+            "label": {
+              "es": "Repositorio del ejemplo",
+              "en": "Example repository"
+            },
+            "url": "https://github.com/esantosinszone/inszone"
+          }
+        ]
+      },
+      {
+        "cat": "performance",
+        "title": {
+          "es": "Imágenes optimizadas y en formato WebP",
+          "en": "Optimized images in WebP format"
+        },
+        "body": [
+          {
+            "es": "Todas las imágenes deben estar <b>optimizadas al tamaño real de uso</b> y entregarse en <b>formato WebP</b>. Hoy se sirven con un tamaño mucho mayor al necesario, lo que penaliza directamente el tiempo de carga.",
+            "en": "All images must be <b>optimized to the size they are actually displayed at</b> and delivered in <b>WebP format</b>. They are currently served much larger than needed, which directly hurts load time."
+          }
+        ],
+        "ok": {
+          "es": "En el panel Network, ninguna imagen se descarga a más del doble del tamaño en que se muestra, y todas llegan como .webp.",
+          "en": "In the Network panel, no image downloads at more than twice its displayed size, and every one arrives as .webp."
+        }
+      },
+      {
+        "cat": "performance",
+        "title": {
+          "es": "Bordes redondeados por CSS, no exportados en la imagen",
+          "en": "Rounded corners in CSS, not baked into the image"
+        },
+        "body": [
+          {
+            "es": "Las imágenes con esquinas redondeadas deben conseguir ese aspecto <b>con CSS</b> — <code>border-radius: 24px</code>, por ejemplo — y no exportarse ya recortadas. Hoy el redondeo viene aplicado en el propio archivo.",
+            "en": "Images with rounded corners must get that shape <b>from CSS</b> — <code>border-radius: 24px</code>, for example — instead of being exported already cropped. Right now the rounding is baked into the file itself."
+          },
+          {
+            "es": "Exportar el redondeo obliga a la imagen a llevar <b>canal alfa</b> para que las esquinas queden transparentes, y eso la vuelve más pesada. Con CSS el archivo se exporta rectangular y liviano, el radio se ajusta cuando haga falta sin volver a exportar nada, y puede ser distinto en desktop y en mobile.",
+            "en": "Baking the rounding forces the image to carry an <b>alpha channel</b> so the corners can be transparent, which makes it heavier. With CSS the file is exported flat and light, the radius can be adjusted at any time without re-exporting anything, and it can differ between desktop and mobile."
+          }
+        ],
+        "ok": {
+          "es": "Quitando el <code>border-radius</code> en el inspector, debajo queda una imagen rectangular con las esquinas opacas: el redondeo viene del CSS y no del archivo.",
+          "en": "Removing the <code>border-radius</code> in the inspector leaves a plain rectangular image with opaque corners: the rounding comes from the CSS, not from the file."
+        }
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Header que se oculta y reaparece",
+          "en": "Header that hides and comes back"
+        },
+        "body": [
+          {
+            "es": "El header debe <b>ocultarse mientras el usuario hace scroll hacia abajo</b> y <b>volver a aparecer apenas hace scroll hacia arriba</b>, como en el sitio de referencia.",
+            "en": "The header must <b>hide while the user scrolls down</b> and <b>come back as soon as they scroll up</b>, as on the reference site."
+          }
+        ],
+        "ok": {
+          "es": "Bajando, el header desaparece de la pantalla; con el primer gesto hacia arriba vuelve a estar visible sin necesidad de llegar al tope de la página.",
+          "en": "Scrolling down, the header leaves the screen; the first upward gesture brings it back without having to reach the top of the page."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Sitio de referencia",
+              "en": "Reference site"
+            },
+            "url": "https://inszoneinsurance.vercel.app/"
+          }
+        ]
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Si el proyecto está en Astro: transiciones de página con &lt;ClientRouter /&gt;",
+          "en": "If the project is built with Astro: page transitions with &lt;ClientRouter /&gt;"
+        },
+        "body": [
+          {
+            "es": "Si el desarrollo está sobre <b>Astro</b>, la navegación entre páginas debe usar las <b>View Transitions</b> del propio framework en lugar de una recarga completa. Ojo con el nombre: el componente se llama <b>&lt;ClientRouter /&gt;</b> desde <b>Astro 5</b> y sigue igual en <b>Astro 7</b> — antes era <code>&lt;ViewTransitions /&gt;</code>, y viene del mismo paquete <code>astro:transitions</code>.",
+            "en": "If the build is on <b>Astro</b>, navigation between pages must use the framework's own <b>View Transitions</b> instead of a full reload. Watch the name: the component has been <b>&lt;ClientRouter /&gt;</b> since <b>Astro 5</b> and still is in <b>Astro 7</b> — it used to be <code>&lt;ViewTransitions /&gt;</code>, and it comes from the same <code>astro:transitions</code> package."
+          },
+          {
+            "es": "Se declara <b>una sola vez</b> en el <code>&lt;head&gt;</code> del layout compartido y ya aplica a todo el sitio: la navegación pasa a ser client-side y las páginas entran con transición en lugar de un salto en blanco.",
+            "en": "It is declared <b>once</b> in the shared layout's <code>&lt;head&gt;</code> and applies to the whole site: navigation becomes client-side and pages fade in instead of flashing white."
+          }
+        ],
+        "snippets": [
+          {
+            "label": {
+              "es": "Layout compartido — se declara una sola vez",
+              "en": "Shared layout — declared once"
+            },
+            "lang": "astro",
+            "code": "---\n// src/layouts/Layout.astro\nimport { ClientRouter } from 'astro:transitions';\n---\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>{title}</title>\n    <ClientRouter />\n  </head>\n  <body>\n    <slot />\n  </body>\n</html>"
+          },
+          {
+            "label": {
+              "es": "Control fino, elemento por elemento",
+              "en": "Fine-grained control, element by element"
+            },
+            "lang": "astro",
+            "code": {
+              "es": "<!-- El header no se vuelve a montar en cada navegación -->\n<header transition:persist>...</header>\n\n<!-- Dos elementos con el mismo nombre se animan de uno al otro entre páginas -->\n<h1 transition:name=\"page-title\">{title}</h1>\n\n<!-- Animación de entrada: fade (por defecto), slide, initial o none -->\n<main transition:animate=\"slide\">...</main>",
+              "en": "<!-- The header is not re-mounted on every navigation -->\n<header transition:persist>...</header>\n\n<!-- Two elements sharing a name animate from one to the other across pages -->\n<h1 transition:name=\"page-title\">{title}</h1>\n\n<!-- Entry animation: fade (default), slide, initial or none -->\n<main transition:animate=\"slide\">...</main>"
+            }
+          },
+          {
+            "label": {
+              "es": "Importante: reiniciar los scripts en cada navegación",
+              "en": "Important: re-run scripts on every navigation"
+            },
+            "lang": "js",
+            "code": {
+              "es": "// Con navegación client-side el documento se reemplaza y DOMContentLoaded\n// no vuelve a dispararse: el scroll reveal, los contadores y los carruseles\n// quedan muertos en la segunda página si no se reinician acá.\ndocument.addEventListener('astro:page-load', () => {\n  initReveal();\n});\n\n// Y se desarman antes del swap, para no dejar observers ni listeners\n// colgando de la página anterior.\ndocument.addEventListener('astro:before-swap', () => {\n  destroyReveal();\n});",
+              "en": "// With client-side navigation the document is replaced and DOMContentLoaded\n// no longer fires: scroll reveal, counters and carousels are dead on the\n// second page unless they are re-initialised here.\ndocument.addEventListener('astro:page-load', () => {\n  initReveal();\n});\n\n// And torn down before the swap, so no observers or listeners are left\n// hanging from the previous page.\ndocument.addEventListener('astro:before-swap', () => {\n  destroyReveal();\n});"
+            }
+          }
+        ],
+        "ok": {
+          "es": "Al pasar de una página a otra la URL cambia sin recarga completa (no parpadea el favicon ni se ve el fondo blanco), se ve la transición, y en la página nueva siguen funcionando el scroll reveal, los contadores y los carruseles.",
+          "en": "Moving from one page to another, the URL changes without a full reload (no favicon flicker, no white flash), the transition is visible, and on the new page the scroll reveal, counters and carousels still work."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Astro — View Transitions (&lt;ClientRouter /&gt;)",
+              "en": "Astro — View Transitions (&lt;ClientRouter /&gt;)"
+            },
+            "url": "https://docs.astro.build/en/guides/view-transitions/"
+          }
+        ]
+      },
+      {
+        "cat": "responsive",
+        "title": {
+          "es": "Header en mobile: medidas del Figma",
+          "en": "Mobile header: the Figma measurements"
+        },
+        "body": [
+          {
+            "es": "En <b>mobile</b>, el header debe quedar con las medidas del Figma: <b>16 px de padding arriba y abajo</b> y <b>24 px a los lados</b>. Los recuadros rojos de la captura marcan esas bandas, que hoy no coinciden.",
+            "en": "On <b>mobile</b>, the header must use the Figma measurements: <b>16px of top and bottom padding</b> and <b>24px on the sides</b>. The red boxes in the screenshot mark those bands, which don’t match today."
+          },
+          {
+            "es": "Dentro del header, dos tamaños fijos: el <b>logo a 100 px de ancho</b> y el <b>icono del teléfono a 32 px</b>.",
+            "en": "Inside the header, two fixed sizes: the <b>logo at 100px wide</b> and the <b>phone icon at 32px</b>."
+          }
+        ],
+        "ok": {
+          "es": "En mobile, midiendo en el inspector: 16 px entre el borde superior del header y el logo, los mismos 16 por debajo, 24 a cada lado, el logo de 100 px de ancho y el icono del teléfono de 32.",
+          "en": "On mobile, measured in the inspector: 16px between the top edge of the header and the logo, the same 16 below it, 24 on each side, the logo 100px wide and the phone icon 32."
+        },
+        "img": "images/header-mobile.png",
+        "cap": {
+          "es": "Header en mobile — los recuadros rojos marcan el espacio de arriba y de abajo y los márgenes laterales.",
+          "en": "Mobile header — the red boxes mark the top and bottom spacing and the side margins."
+        },
+        "view": "mobile"
+      },
+      {
+        "cat": "responsive",
+        "title": {
+          "es": "Footer con las esquinas superiores redondeadas en mobile",
+          "en": "Footer with rounded top corners on mobile"
+        },
+        "body": [
+          {
+            "es": "En <b>mobile</b>, el footer debe llevar <b>redondeo en las dos esquinas de arriba</b>, marcadas en rojo en la captura. Hoy el borde superior es recto de lado a lado.",
+            "en": "On <b>mobile</b>, the footer must have <b>rounded top corners</b> — both of them, marked in red in the screenshot. Right now the top edge is straight from side to side."
+          },
+          {
+            "es": "Es solo el borde superior y solo en mobile: en desktop el footer queda como está.",
+            "en": "It is only the top edge and only on mobile: on desktop the footer stays as it is."
+          }
+        ],
+        "ok": {
+          "es": "A 375 px de ancho, las dos esquinas superiores del footer se ven redondeadas y por el recorte asoma el fondo de la sección anterior; en desktop el borde sigue recto.",
+          "en": "At 375px wide, both top corners of the footer are rounded and the previous section’s background shows through the cut; on desktop the edge stays straight."
+        },
+        "img": "images/footer-mobile.png",
+        "cap": {
+          "es": "Footer en mobile — las marcas rojas señalan las dos esquinas que deben ir redondeadas.",
+          "en": "Footer on mobile — the red marks point at the two corners that should be rounded."
+        },
+        "view": "mobile"
+      },
+      {
+        "view": "both",
+        "cat": "layout",
+        "title": {
+          "es": "Títulos de sección unificados en todo el sitio",
+          "en": "Unified section headings across the whole site"
+        },
+        "body": [
+          {
+            "es": "Los títulos de sección de <b>absolutamente todas las páginas</b> —el Home y las internas— deben unificarse en un mismo tamaño y color. Hoy cada sección resuelve el suyo y no coinciden entre páginas.",
+            "en": "The section headings on <b>absolutely every page</b> — the Home page and the internal ones — must be unified to a single size and colour. Today each section solves its own and they don’t match across pages."
+          },
+          {
+            "es": "<b>Título:</b> 40 px bold en desktop, 20 px bold en mobile, color <code>primary-950</code> en los dos casos.",
+            "en": "<b>Heading:</b> 40px bold on desktop, 20px bold on mobile, colour <code>primary-950</code> in both cases."
+          },
+          {
+            "es": "<b>Eyebrow</b> —el texto chico que va encima del título, cuando la sección lo tiene, como «Help & Support»—: 24 px en desktop, 14 px en mobile, medium y color <code>neutral-600</code>.",
+            "en": "<b>Eyebrow</b> — the small text above the heading, when the section has one, like “Help &amp; Support” —: 24px on desktop, 14px on mobile, medium and colour <code>neutral-600</code>."
+          },
+          {
+            "es": "<b>Descripción</b>, cuando existe: 16 px en desktop y 14 px en mobile.",
+            "en": "<b>Description</b>, where present: 16px on desktop and 14px on mobile."
+          },
+          {
+            "es": "La forma de que esto no vuelva a divergir es que el bloque salga de <b>un único componente</b> que reciba eyebrow, título y descripción, igual que se pide para el hero de páginas internas. Así un cambio de tamaño se hace una vez.",
+            "en": "The way to keep this from drifting again is for the block to come from <b>a single component</b> taking eyebrow, heading and description, just as asked for the internal page hero. That way a size change is made once."
+          }
+        ],
+        "ok": {
+          "es": "Tomando dos secciones de páginas distintas: en desktop los títulos miden 40 px, los eyebrows 24 y las descripciones 16; en mobile, 20, 14 y 14; y los colores son <code>primary-950</code> y <code>neutral-600</code> en todos los casos.",
+          "en": "Taking two sections from different pages: on desktop the headings measure 40px, the eyebrows 24 and the descriptions 16; on mobile, 20, 14 and 14; and the colours are <code>primary-950</code> and <code>neutral-600</code> throughout."
+        },
+        "img": "images/general-title-section-desktop.png",
+        "cap": {
+          "es": "«Frequently Asked Questions» en desktop — eyebrow 24, título 40 y descripción 16.",
+          "en": "“Frequently Asked Questions” on desktop — eyebrow 24, heading 40 and description 16."
+        },
+        "shots": [
+          {
+            "img": "images/general-title-section-mobile.png",
+            "cap": {
+              "es": "La misma sección en mobile — eyebrow 14 y título 20.",
+              "en": "The same section on mobile — eyebrow 14 and heading 20."
+            }
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Una sola estructura de maquetación para todas las páginas",
+          "en": "One markup structure for every page"
+        },
+        "body": [
+          {
+            "es": "Cada página interna está maquetada con su propia estructura de divs y sus propias clases, y eso hace que el <b>container no mida lo mismo en todas</b>. Inspeccionando el hero de tres páginas se ve el problema completo:",
+            "en": "Each internal page is built with its own div structure and its own class names, and that makes the <b>container a different width on each one</b>. Inspecting the hero on three pages shows the whole problem:"
+          },
+          {
+            "es": "<b>About Us</b> — <code>div.inz-product-hero__inner</code> mide <b>1320 px</b>, que es el ancho correcto. <b>Mergers & Acquisitions</b> — <code>div.mahero</code> mide <b>1332 px</b>, y además su <code>section.mahero-frame</code> trae un padding superior que no corresponde y empuja el hero más abajo de donde debería empezar. <b>Careers</b> — <code>div.inz-stats-hero-frame</code> mide 1344 px con 24 px de padding a cada lado, así que el contenido queda en <b>1296 px</b>.",
+            "en": "<b>About Us</b> — <code>div.inz-product-hero__inner</code> is <b>1320px</b>, which is the correct width. <b>Mergers &amp; Acquisitions</b> — <code>div.mahero</code> is <b>1332px</b>, and its <code>section.mahero-frame</code> also carries a top padding that shouldn’t be there and pushes the hero lower than it should start. <b>Careers</b> — <code>div.inz-stats-hero-frame</code> is 1344px with 24px of padding on each side, leaving the content at <b>1296px</b>."
+          },
+          {
+            "es": "Las clases tampoco siguen una convención: <code>inz-product-hero__*</code> en una página, <code>mahero__*</code> en otra, <code>inz-stats-hero-*</code> en la tercera. Mientras cada página traiga su propia estructura, estas diferencias van a reaparecer con cada sección nueva, y un cambio de ancho hay que hacerlo tantas veces como páginas haya.",
+            "en": "The class names don’t follow a convention either: <code>inz-product-hero__*</code> on one page, <code>mahero__*</code> on another, <code>inz-stats-hero-*</code> on the third. As long as each page brings its own structure, these differences will come back with every new section, and a width change has to be made as many times as there are pages."
+          },
+          {
+            "es": "Todas las páginas deben compartir la misma estructura de contenedores y las mismas clases, con <b>1320 px</b> como ancho del container.",
+            "en": "Every page must share the same container structure and the same class names, with <b>1320px</b> as the container width."
+          }
+        ],
+        "ok": {
+          "es": "Inspeccionando el container en About Us, Mergers & Acquisitions y Careers, las tres dan 1320 px; y el hero arranca a la misma altura en las tres, sin padding extra en ninguna.",
+          "en": "Inspecting the container on About Us, Mergers & Acquisitions and Careers, all three report 1320px; and the hero starts at the same height on all three, with no extra padding on any of them."
+        },
+        "img": "images/general-layout-01.png",
+        "cap": {
+          "es": "About Us — <code>div.inz-product-hero__inner</code>: 1320 px, el ancho correcto.",
+          "en": "About Us — <code>div.inz-product-hero__inner</code>: 1320px, the correct width."
+        },
+        "shots": [
+          {
+            "img": "images/general-layout-02.png",
+            "cap": {
+              "es": "Mergers & Acquisitions — <code>div.mahero</code>: 1332 px, y el frame con padding de más arriba.",
+              "en": "Mergers & Acquisitions — <code>div.mahero</code>: 1332px, and the frame with extra padding on top."
+            }
+          },
+          {
+            "img": "images/general-layout-03.png",
+            "cap": {
+              "es": "Careers — <code>div.inz-stats-hero-frame</code>: 1344 px con 24 de padding, contenido en 1296.",
+              "en": "Careers — <code>div.inz-stats-hero-frame</code>: 1344px with 24 of padding, content at 1296."
+            }
+          }
+        ]
+      },
+      {
+        "view": "both",
+        "cat": "layout",
+        "title": {
+          "es": "El hero de About Us, como componente para todas las internas",
+          "en": "The About Us hero, as the component for every internal page"
+        },
+        "body": [
+          {
+            "es": "El hero de <b>About Us</b> ya está funcionando como debe: estructura, medidas y comportamiento son los correctos, en desktop y en mobile. Ese mismo hero debe usarse en <b>todas las páginas internas que tengan esa estructura</b>.",
+            "en": "The <b>About Us</b> hero already works as it should: structure, measurements and behaviour are all correct, on desktop and on mobile. That same hero must be used on <b>every internal page with that structure</b>."
+          },
+          {
+            "es": "No se trata de copiarlo página por página, sino de extraerlo a <b>un componente reutilizable</b>: recibe el breadcrumb, el título, la bajada y las estadísticas, y el resto ya viene resuelto. Es lo que evita que cada página vuelva a inventar el suyo.",
+            "en": "Not by copying it page by page, but by extracting it into <b>a reusable component</b>: it takes the breadcrumb, the heading, the standfirst and the stats, and everything else comes solved. That is what stops each page from inventing its own again."
+          }
+        ],
+        "ok": {
+          "es": "Las páginas internas con este hero renderizan el mismo componente que About Us — no un bloque copiado — y se ven idénticas entre sí en desktop y en mobile.",
+          "en": "The internal pages with this hero render the same component as About Us — not a copied block — and look identical to each other on desktop and on mobile."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "About Us — el hero ya resuelto",
+              "en": "About Us — the hero already solved"
+            },
+            "url": "https://inszoneinsurance-emdash-staging.dev.apps.cloud.inszone.net/about-us"
+          }
+        ]
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Sin hover ni clic en los cards que solo informan",
+          "en": "No hover or click on cards that only inform"
+        },
+        "body": [
+          {
+            "es": "Los cards que <b>solo muestran información</b> y no llevan a ninguna parte —como los de Mergers & Acquisitions— no deben tener estado de hover ni responder al clic: nada de cursor <code>pointer</code>, de elevarse, de cambiar de color o de sombra.",
+            "en": "Cards that <b>only display information</b> and don’t lead anywhere — like the ones on Mergers & Acquisitions — must have no hover state and must not respond to clicks: no <code>pointer</code> cursor, no lifting, no colour or shadow change."
+          },
+          {
+            "es": "Un card que reacciona al mouse promete un destino que no existe: el usuario hace clic, no pasa nada, y pierde la confianza en los que sí son clicables.",
+            "en": "A card that reacts to the mouse promises a destination that isn’t there: the user clicks, nothing happens, and they stop trusting the ones that really are clickable."
+          }
+        ],
+        "ok": {
+          "es": "Pasando el mouse por encima de un card informativo, el cursor sigue siendo la flecha y el card no se mueve ni cambia; al hacer clic, no pasa nada. Los cards que sí navegan conservan su hover.",
+          "en": "Hovering an informational card, the cursor stays an arrow and the card neither moves nor changes; clicking does nothing. Cards that do navigate keep their hover."
+        },
+        "img": "images/remove-hover-click.png",
+        "cap": {
+          "es": "Mergers & Acquisitions — «Powerful Past, Prosperous Future» con el hover puesto: cambia de fondo aunque no lleve a ninguna parte.",
+          "en": "Mergers & Acquisitions — “Powerful Past, Prosperous Future” with hover applied: it changes background even though it leads nowhere."
+        }
+      }
+    ],
+    "home": [
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Padding del header desbalanceado",
+          "en": "Unbalanced header padding"
+        },
+        "body": [
+          {
+            "es": "En el header, el padding <b>superior e inferior deben ser iguales</b>. Hoy el inferior es mayor: el Hero Section debería comenzar donde indica la flecha roja.",
+            "en": "The header's <b>top and bottom padding must match</b>. The bottom one is currently larger: the Hero Section should start where the red arrow points."
+          },
+          {
+            "es": "El punto donde arranca el Hero Section es el <b>borde plano superior de la foto de fondo</b>, no la cabeza de la persona. Hoy se toma la cabeza como referencia, y por eso visualmente parece que debajo del header quedara más aire del que hay.",
+            "en": "The Hero Section starts at the <b>flat top edge of the background photo</b>, not at the person's head. The head is what's being used as the reference today, and that's why it visually looks like there is more air under the header than there really is."
+          },
+          {
+            "es": "La foto de fondo tiene <b>forma irregular</b> — la persona sobresale por encima y el borde inferior lleva un recorte —, así que el tope del hero se mide siempre contra la parte plana de esa foto.",
+            "en": "The background photo has an <b>irregular shape</b> — the person rises above it and the bottom edge is notched — so the top of the hero is always measured against the flat part of that photo."
+          }
+        ],
+        "ok": {
+          "es": "Los dos espacios marcados en rojo miden lo mismo, tomando el de abajo hasta el borde plano de la foto del hero y no hasta la cabeza de la persona.",
+          "en": "Both spaces marked in red measure the same, with the lower one measured to the flat edge of the hero photo and not to the person's head."
+        },
+        "img": "images/home-01-header-padding.png",
+        "cap": {
+          "es": "Header del Home — los recuadros rojos marcan el espacio superior e inferior.",
+          "en": "Home header — the red boxes mark the top and bottom spacing."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Forma irregular del hero con máscara CSS",
+          "en": "Irregular hero shape with a CSS mask"
+        },
+        "body": [
+          {
+            "es": "Para el recorte irregular de la foto de fondo del hero — el escalón que deja el panel azul en el borde inferior — <b>se puede</b> reutilizar la estrategia de maquetación del repositorio de referencia, en lugar de exportar la imagen ya recortada. Es una propuesta: si el equipo prefiere resolverlo de otra forma, el requisito sigue siendo solo que el recorte exista.",
+            "en": "For the irregular cut-out of the hero background photo — the step the blue panel leaves along the bottom edge — the markup strategy from the reference repository <b>can</b> be reused, instead of exporting the image already cropped. This is a proposal: if the team prefers to solve it another way, the only requirement is still that the cut-out exists."
+          },
+          {
+            "es": "La clase <code>.hero-notch</code> aplica una <b>máscara de dos capas</b> sobre la imagen: un degradado sólido que cubre todo menos los últimos 96 px, y un SVG en <code>data:</code> que dibuja el escalón en esa franja inferior. La imagen se sigue exportando rectangular — el recorte lo hace el CSS — y la forma se ajusta cambiando dos variables, <code>--hero-notch-height</code> y <code>--hero-notch-width</code>.",
+            "en": "The <code>.hero-notch</code> class applies a <b>two-layer mask</b> to the image: a solid gradient covering everything but the last 96px, and an inline <code>data:</code> SVG drawing the step in that bottom band. The image is still exported as a rectangle — the CSS does the cropping — and the shape is adjusted through two variables, <code>--hero-notch-height</code> and <code>--hero-notch-width</code>."
+          },
+          {
+            "es": "<code>mask-size</code> y <code>mask-position</code> reciben <b>una entrada por capa</b>, separadas por coma, y van duplicadas con el prefijo <code>-webkit-</code> por Safari. En la referencia la persona es una <b>segunda imagen</b> superpuesta en <code>z-20</code>: por eso puede sobresalir del recorte sin que la máscara la afecte.",
+            "en": "<code>mask-size</code> and <code>mask-position</code> take <b>one entry per layer</b>, comma-separated, and are duplicated with the <code>-webkit-</code> prefix for Safari. In the reference the person is a <b>second image</b> layered on top at <code>z-20</code>: that's how it can break out of the cut-out without the mask affecting it."
+          }
+        ],
+        "snippets": [
+          {
+            "label": {
+              "es": "Clase .hero-notch — la máscara de dos capas",
+              "en": ".hero-notch class — the two-layer mask"
+            },
+            "lang": "css",
+            "code": ".hero-notch {\n  --hero-notch-height: 96px;\n  --hero-notch-width: 1320px;\n  --hero-notch-shape: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1320 96' preserveAspectRatio='none'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M0 0h1320v96H0Z M650.1,72h0c-15.4-15.4-36.2-24-57.9-24H48C21.5,48,0,26.5,0,0h0v96h708c-21.7,0-42.6-8.6-57.9-24Z'/%3E%3C/svg%3E\");\n\n  -webkit-mask-image: linear-gradient(#000, #000), var(--hero-notch-shape);\n  mask-image: linear-gradient(#000, #000), var(--hero-notch-shape);\n  -webkit-mask-size:\n    100% calc(100% - var(--hero-notch-height)),\n    var(--hero-notch-width) var(--hero-notch-height);\n  mask-size:\n    100% calc(100% - var(--hero-notch-height)),\n    var(--hero-notch-width) var(--hero-notch-height);\n  -webkit-mask-position: left top, left bottom;\n  mask-position: left top, left bottom;\n  -webkit-mask-repeat: no-repeat;\n  mask-repeat: no-repeat;\n}"
+          },
+          {
+            "label": {
+              "es": "Hero.astro del repositorio — src/sections/home/Hero.astro",
+              "en": "Hero.astro from the repository — src/sections/home/Hero.astro"
+            },
+            "lang": "astro",
+            "code": "---\nimport MainButton from '@/components/ui/MainButton.astro'\nimport { ArrowRight02Icon, Briefcase01Icon, Car01Icon, HealtcareIcon, Tick02Icon } from '@hugeicons/core-free-icons'\nimport { HugeiconsIcon } from '@hugeicons/react'\nimport type { IconSvgElement } from '@hugeicons/react'\n\nexport interface ServiceProps {\n  label: string\n  icon: IconSvgElement\n}\n\nconst insurances: ServiceProps[] = [\n  { label: \"Business\", icon: Briefcase01Icon },\n  { label: \"Personal\", icon: Car01Icon },\n  { label: \"Benefits\", icon: HealtcareIcon }\n]\n---\n\n<!-- mt: clearance for the fixed header, not decorative padding — it tracks\n     the header's own height, which drops to 80px below md.\n\n     max-md:z-0 is what keeps the panel INSIDE this section: the panel carries\n     z-30 for the desktop overlap, and with no z-index here the section never\n     opens a stacking context, so that 30 competes in the root against the next\n     section and paints over it. A z-index of 0 contains it. -->\n<section class=\"mt-20 md:mt-24 mb-[var(--section-py)] max-w-[calc(var(--container-8xl)+2*var(--section-pad))] mx-auto relative reveal-fade max-md:z-0 max-md:mb-0 px-0 md:px-[var(--section-pad)] xl:z-20\">\n  <div class=\"relative\">\n    <div class=\"relative z-30 w-full rounded-3xl gradient-inszone-dark text-white p-[var(--section-pad)] flex flex-col gap-6 justify-center xl:p-14 max-md:rounded-b-none max-md:pb-[calc(var(--section-pad)+1.5rem)] xl:absolute xl:top-6 xl:left-6 xl:bottom-18 xl:w-3xl\">\n      <div class=\"flex flex-col gap-2\">\n        <h1 class=\"reveal-left text-hero-title leading-[1.1] font-semibold\">Real relationships.<br>Local agents.<br>National support.</h1>\n        <h2 class=\"reveal-left text-hero-subtitle leading-[1.2] text-primary-300 font-medium\">Personal, Commercial, and Benefits Insurance</h2>\n      </div>\n      <div class=\"flex flex-col gap-4 reveal-left\">\n        <h3 class=\"font-semibold text-lg leading-none\">Get a Free Quote Today</h3>\n        <!-- Below md the three cards restack as tiles — icon over a centred\n             label — and swap the flat white tint for the tinted-glass fill the\n             staging build uses: a light-to-dark gradient blended over the brand\n             blue, going to a white-to-black gradient over primary-100 when\n             picked. The blend mode is spelled out as `overlay, normal` (one\n             value per layer) so only the gradient blends; a single value would\n             blend the solid colour with whatever is behind the panel too. -->\n        <div class=\"flex gap-4\">\n          { insurances.map(({ label, icon }, index) => (\n            <div class=\"min-w-0 flex-1 active:scale-95 transition-transform\">\n              <input type=\"radio\" id={ label } name=\"insurance\" class=\"sr-only peer\" checked={ index === 0 }>\n              <label\n                for={ label }\n                class=\"relative flex items-center gap-2 bg-white/8 hover:bg-white/16 peer-checked:bg-white/24 peer-checked:[&_.tick]:opacity-100 cursor-pointer rounded-lg p-4 transition max-md:flex-col max-md:justify-center max-md:gap-3 max-md:rounded-xl max-md:px-5 max-md:py-4 max-md:bg-primary-500 max-md:[background-image:linear-gradient(180deg,#ffffff3d_0%,#0000003d_100%)] max-md:[background-blend-mode:overlay,normal] max-md:shadow-[0_8px_6px_#02061866] max-md:peer-checked:bg-primary-100 max-md:peer-checked:[background-image:linear-gradient(#fff_0%,#000_100%)] max-md:peer-checked:text-primary-950 max-md:peer-checked:shadow-[0_8px_12px_#02061866]\"\n              >\n                <!-- `text-white` is explicit because the picked card turns its\n                     own text primary-950, and the tick sits on a primary-950\n                     badge — inheriting would make it invisible. -->\n                <span class=\"tick opacity-0 absolute top-2 right-2 size-5 rounded-full bg-primary-950 text-white flex items-center justify-center\">\n                  <HugeiconsIcon icon={ Tick02Icon } size={ 12 } strokeWidth={ 4 } />\n                </span>\n                <HugeiconsIcon icon={ icon } size={ 48 } strokeWidth={ 1 } />\n                <span class=\"font-semibold max-md:text-center max-md:text-sm max-md:leading-[1.2] max-md:font-bold\">{ label }</span>\n              </label>\n            </div>\n            ))\n          }\n        </div>\n        <!-- Below md the whole row drops from 64px tall to 48px, matching the\n             staging build: shorter field, 14px placeholder, and a CTA that stops\n             hugging its label and instead shares the row with the field, pushing\n             its arrow out to the right edge. -->\n        <div class=\"flex\">\n          <input\n            type=\"text\"\n            placeholder=\"Enter Zip Code\"\n            class=\"placeholder-white px-6 h-16 min-w-0 flex-1 border-2 border-r-0 border-primary rounded-tl-lg rounded-bl-lg max-md:h-12 max-md:px-4 max-md:text-sm\"\n          >\n          <MainButton\n            icon={ ArrowRight02Icon }\n            iconStroke={ 2 }\n            size=\"lg\"\n            variant=\"main\"\n            class=\"rounded-tl-none rounded-bl-none max-md:h-12 max-md:flex-1 max-md:justify-center max-md:gap-1 max-md:px-4 max-md:text-sm max-md:whitespace-nowrap\"\n          >\n            Start My Quote\n          </MainButton>\n        </div>\n      </div>\n    </div>\n    <img src=\"/images/inszone-insurance-services.webp\" alt=\"\" class=\"hidden xl:block hero-notch min-h-160 rounded-3xl rounded-tl-[3rem] rounded-bl-[6rem] overflow-hidde z-10 object-cover object-bottom\">\n    <img src=\"/images/inszone-insurance-services-man.webp\" alt=\"\" class=\"hidden xl:block absolute min-h-[662px] rounded-3xl bottom-0 left-0 z-20 object-cover object-bottom\">\n  </div>\n</section>"
+          }
+        ],
+        "ok": {
+          "es": "Si se adopta: el hero muestra el escalón en el borde inferior de la foto y, quitando la clase <code>.hero-notch</code> en el inspector, debajo aparece la imagen rectangular completa — el recorte lo hace el CSS y no el archivo.",
+          "en": "If adopted: the hero shows the step along the bottom edge of the photo and, removing the <code>.hero-notch</code> class in the inspector, the full rectangular image appears underneath — the CSS does the cropping, not the file."
+        },
+        "img": "images/home-01-header-padding.png",
+        "cap": {
+          "es": "El borde inferior de la foto del hero: el escalón que deja el panel azul es la forma que arma la máscara.",
+          "en": "The bottom edge of the hero photo: the step left by the blue panel is the shape the mask builds."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Repositorio de referencia",
+              "en": "Reference repository"
+            },
+            "url": "https://github.com/esantosinszone/inszone"
+          },
+          {
+            "label": {
+              "es": "Hero.astro en el repositorio",
+              "en": "Hero.astro in the repository"
+            },
+            "url": "https://github.com/esantosinszone/inszone/blob/main/src/sections/home/Hero.astro"
+          },
+          {
+            "label": {
+              "es": "Sitio de referencia",
+              "en": "Reference site"
+            },
+            "url": "https://inszoneinsurance.vercel.app/"
+          }
+        ],
+        "kind": "suggestion"
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Sección «We protect your future.» fuera del container",
+          "en": "“We protect your future.” section breaks the container"
+        },
+        "body": [
+          {
+            "es": "La sección <b>«We protect your future.»</b> debe alinearse al <b>100% del ancho del container</b>: su contenido tiene que respetar los mismos márgenes laterales que el resto del sitio, marcados por las líneas rojas.",
+            "en": "The <b>“We protect your future.”</b> section must align to <b>100% of the container width</b>: its content has to respect the same side margins as the rest of the site, marked by the red lines."
+          }
+        ],
+        "ok": {
+          "es": "El borde izquierdo del título y el del paso 4 coinciden con los márgenes del header.",
+          "en": "The left edge of the heading and of step 4 line up with the header's margins."
+        },
+        "img": "images/home-02-container-width.png",
+        "cap": {
+          "es": "Sección «We protect your future.» — las líneas rojas marcan el ancho del container.",
+          "en": "“We protect your future.” section — the red lines mark the container width."
+        }
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Logos de aseguradoras en carrusel",
+          "en": "Carrier logos as a carousel"
+        },
+        "body": [
+          {
+            "es": "La fila de logos de <b>«The Best Insurance Companies For You»</b> debe ser un <b>carrusel en loop</b> y con <b>muchas más marcas</b> que las 7 actuales, no una fila estática.",
+            "en": "The logo row in <b>“The Best Insurance Companies For You”</b> must be a <b>looping carousel</b> with <b>many more brands</b> than the current 7, not a static row."
+          }
+        ],
+        "ok": {
+          "es": "Los logos avanzan solos y el ciclo se repite sin cortes ni espacios vacíos.",
+          "en": "The logos move on their own and the loop repeats with no jumps or empty gaps."
+        },
+        "img": "images/home-03-carriers-carousel.png",
+        "cap": {
+          "es": "Sección «The Best Insurance Companies For You» — hoy es una fila fija de 7 logos.",
+          "en": "“The Best Insurance Companies For You” section — currently a fixed row of 7 logos."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Sitio de referencia",
+              "en": "Reference site"
+            },
+            "url": "https://inszoneinsurance.vercel.app/"
+          }
+        ]
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Contador ascendente en el bloque «PRESENCE»",
+          "en": "Count-up animation in the “PRESENCE” block"
+        },
+        "body": [
+          {
+            "es": "En el bloque <b>«PRESENCE»</b>, los números (22 States, 113 Locations, 1,139 Team Members, 174 Agencies) deben <b>animarse desde 0 hasta su valor final cuando el usuario llega con el scroll a la sección</b>, no al cargar la página.",
+            "en": "In the <b>“PRESENCE”</b> block, the numbers (22 States, 113 Locations, 1,139 Team Members, 174 Agencies) must <b>count up from 0 to their final value when the user scrolls to the section</b>, not on page load."
+          }
+        ],
+        "ok": {
+          "es": "Si se abre la página y se baja despacio, los cuatro números arrancan en 0 justo cuando el bloque entra en pantalla.",
+          "en": "Opening the page and scrolling down slowly, all four numbers start at 0 exactly when the block comes into view."
+        },
+        "img": "images/home-04-counter.png",
+        "cap": {
+          "es": "Bloque «PRESENCE» — 22 States, 113 Locations, 1,139 Team Members, 174 Agencies.",
+          "en": "“PRESENCE” block — 22 States, 113 Locations, 1,139 Team Members, 174 Agencies."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Sitio de referencia",
+              "en": "Reference site"
+            },
+            "url": "https://inszoneinsurance.vercel.app/"
+          }
+        ]
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "FAQ con transición y una sola pregunta abierta",
+          "en": "FAQ with transition and one open question"
+        },
+        "body": [
+          {
+            "es": "El FAQ debe <b>abrir y cerrar con transición</b>, y solo una pregunta puede estar abierta a la vez: <b>al abrir una, la que estaba abierta se cierra sola</b>.",
+            "en": "The FAQ must <b>open and close with a transition</b>, and only one question can be open at a time: <b>opening one closes the one that was open</b>."
+          }
+        ],
+        "ok": {
+          "es": "Abriendo las preguntas una tras otra, nunca quedan dos desplegadas al mismo tiempo y ninguna salta de golpe.",
+          "en": "Opening the questions one after another, two are never expanded at the same time and none snaps open."
+        },
+        "img": "images/home-05-faq.png",
+        "cap": {
+          "es": "Sección «Frequently Asked Questions» del Home.",
+          "en": "“Frequently Asked Questions” section on the Home page."
+        }
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Autoplay en el carrusel del blog",
+          "en": "Autoplay on the blog carousel"
+        },
+        "body": [
+          {
+            "es": "El carrusel de posts de <b>«Stay Informed with the Latest Updates»</b> debe <b>avanzar solo</b>, sin depender de que el usuario use las flechas.",
+            "en": "The post carousel in <b>“Stay Informed with the Latest Updates”</b> must <b>advance on its own</b>, without depending on the user clicking the arrows."
+          }
+        ],
+        "ok": {
+          "es": "Dejando la sección en pantalla sin tocar nada, los posts cambian solos y los puntos de paginación acompañan.",
+          "en": "Leaving the section on screen untouched, the posts change by themselves and the pagination dots follow along."
+        },
+        "img": "images/home-06-blog.png",
+        "cap": {
+          "es": "Sección «Stay Informed with the Latest Updates» — carrusel de posts del blog.",
+          "en": "“Stay Informed with the Latest Updates” section — blog post carousel."
+        }
+      },
+      {
+        "kind": "suggestion",
+        "cat": "interaccion",
+        "title": {
+          "es": "La línea que une los pasos, dibujándose al entrar",
+          "en": "The line joining the steps, drawing itself on entry"
+        },
+        "body": [
+          {
+            "es": "En <b>«We protect your future.»</b>, la línea que cruza los cuatro iconos aparece ya dibujada. <b>Se puede</b> hacer que <b>crezca del paso 1 al paso 4</b> cuando la sección entra en pantalla, siguiendo el mismo recorrido que hoy es estático: refuerza la idea de proceso sin agregar nada al contenido.",
+            "en": "In <b>“We protect your future.”</b>, the line crossing the four icons is already drawn when you get there. It <b>can</b> be made to <b>grow from step 1 to step 4</b> as the section enters the viewport, along the same route it already traces: it reinforces the idea of a process without adding anything to the content."
+          },
+          {
+            "es": "La técnica es la clásica de SVG y no necesita librería: se mide el largo del trazo y se publica como variable (<code>--draw-length</code>), el trazo arranca con <code>stroke-dashoffset</code> igual a ese largo — o sea, invisible — y al entrar en pantalla se anima hasta 0. El mismo observador que ya hace aparecer los elementos al hacer scroll es el que dispara la transición.",
+            "en": "The technique is the classic SVG one and needs no library: the stroke length is measured and published as a variable (<code>--draw-length</code>), the stroke starts with <code>stroke-dashoffset</code> equal to that length — invisible — and animates to 0 when it enters the viewport. The same observer that already reveals elements on scroll is what triggers the transition."
+          },
+          {
+            "es": "En el repositorio de referencia está resuelto así: <code>ProcessLine.astro</code> genera el path y <b>mide su largo en el build</b>, no en el navegador, y <code>.reveal-draw</code> hace la animación. El <code>var(--ease-app)</code> del código es el token de easing de ese proyecto.",
+            "en": "The reference repository solves it like this: <code>ProcessLine.astro</code> generates the path and <b>measures its length at build time</b>, not in the browser, and <code>.reveal-draw</code> runs the animation. The <code>var(--ease-app)</code> in the code is that project’s easing token."
+          }
+        ],
+        "snippets": [
+          {
+            "label": {
+              "es": ".reveal-draw — del repositorio de referencia",
+              "en": ".reveal-draw — from the reference repository"
+            },
+            "lang": "css",
+            "code": ".reveal-draw path {\n  stroke-dasharray: var(--draw-length);\n  stroke-dashoffset: var(--draw-length);\n}\n\n.reveal-draw__visible path {\n  stroke-dashoffset: 0;\n  transition: stroke-dashoffset 2.4s var(--ease-app);\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .reveal-draw path,\n  .reveal-draw__visible path {\n    stroke-dasharray: none;\n    stroke-dashoffset: 0;\n    transition: none;\n  }\n}"
+          }
+        ],
+        "ok": {
+          "es": "Si se adopta: al recargar el Home y bajar hasta la sección, la línea no está dibujada y crece desde el paso 1 hacia el paso 4 hasta completarse. Con <code>prefers-reduced-motion</code> activo aparece entera, sin animación.",
+          "en": "If adopted: on reloading the Home page and scrolling down to the section, the line is not drawn and grows from step 1 towards step 4 until complete. With <code>prefers-reduced-motion</code> on, it appears fully drawn, with no animation."
+        },
+        "img": "images/home-09-process-line.png",
+        "cap": {
+          "es": "La línea que une los cuatro pasos de «We protect your future.» — hoy ya está dibujada cuando uno llega a la sección.",
+          "en": "The line joining the four steps of “We protect your future.” — today it is already drawn by the time you reach the section."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "ProcessSteps.astro — la sección",
+              "en": "ProcessSteps.astro — the section"
+            },
+            "url": "https://github.com/esantosinszone/inszone/blob/main/src/sections/home/ProcessSteps.astro"
+          },
+          {
+            "label": {
+              "es": "ProcessLine.astro — el path y su largo",
+              "en": "ProcessLine.astro — the path and its length"
+            },
+            "url": "https://github.com/esantosinszone/inszone/blob/main/src/components/icons/ProcessLine.astro"
+          },
+          {
+            "label": {
+              "es": "Sitio de referencia",
+              "en": "Reference site"
+            },
+            "url": "https://inszoneinsurance.vercel.app/"
+          }
+        ]
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Borde superior redondeado en todas las secciones",
+          "en": "Rounded top edge on every section"
+        },
+        "body": [
+          {
+            "es": "En mobile, <b>todas</b> las secciones deben llevar las dos esquinas de arriba redondeadas en <b>24 px</b>, no solo algunas. El efecto que se busca es que cada sección se lea como si se montara sobre la anterior, y eso se pierde en cuanto una arranca con el borde recto.",
+            "en": "On mobile, <b>every</b> section must have both top corners rounded at <b>24px</b>, not just some of them. The intended effect is that each section reads as if stacked on top of the previous one, and that breaks as soon as one starts with a straight edge."
+          },
+          {
+            "es": "Las cuatro capturas marcan en rojo esas esquinas a lo largo del diseño: el hero con «The Best Insurance Companies For You», «We protect your future.», «What Our Clients Say About Us» junto a «An Insurance Provider with a Proven Strategy to Help You», y «Built for Your Business».",
+            "en": "The four screenshots mark those corners in red across the design: the hero with “The Best Insurance Companies For You”, “We protect your future.”, “What Our Clients Say About Us” together with “An Insurance Provider with a Proven Strategy to Help You”, and “Built for Your Business”."
+          }
+        ],
+        "ok": {
+          "es": "Bajando por el Home en mobile, ninguna sección empieza con el borde recto: en cada unión se ven las dos esquinas redondeadas y el fondo de la sección anterior asomando por el recorte.",
+          "en": "Scrolling down the Home page on mobile, no section starts with a straight edge: at every seam both corners are rounded and the previous section’s background shows through the cut."
+        },
+        "mediaLayout": "grid",
+        "img": "images/home-mobile-01.png",
+        "cap": {
+          "es": "Hero y «The Best Insurance Companies For You».",
+          "en": "Hero and “The Best Insurance Companies For You”."
+        },
+        "shots": [
+          {
+            "img": "images/home-mobile-02.png",
+            "cap": {
+              "es": "«We protect your future.»",
+              "en": "“We protect your future.”"
+            }
+          },
+          {
+            "img": "images/home-mobile-03.png",
+            "cap": {
+              "es": "«What Our Clients Say About Us» y «An Insurance Provider with a Proven Strategy to Help You».",
+              "en": "“What Our Clients Say About Us” and “An Insurance Provider with a Proven Strategy to Help You”."
+            }
+          },
+          {
+            "img": "images/home-mobile-04.png",
+            "cap": {
+              "es": "«Built for Your Business».",
+              "en": "“Built for Your Business”."
+            }
+          }
+        ]
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Padding izquierdo de los pasos de «We protect your future.»",
+          "en": "Left padding of the “We protect your future.” steps"
+        },
+        "body": [
+          {
+            "es": "En mobile, la lista de pasos de <b>«We protect your future.»</b> tiene <b>mucho más espacio a la izquierda que a la derecha</b>: los iconos quedan corridos hacia el centro y la columna se ve descentrada. Las dos líneas rojas de la captura marcan la diferencia.",
+            "en": "On mobile, the step list in <b>“We protect your future.”</b> has <b>much more space on the left than on the right</b>: the icons drift towards the centre and the column reads off-centre. The two red lines in the screenshot mark the difference."
+          },
+          {
+            "es": "El padding izquierdo debe ser <b>igual al derecho</b>, para que el bloque quede centrado dentro de la sección.",
+            "en": "The left padding must <b>match the right one</b>, so the block sits centred inside the section."
+          }
+        ],
+        "ok": {
+          "es": "Midiendo en el inspector, el espacio entre el borde de la sección y el icono del paso 1 es el mismo que queda del otro lado del texto.",
+          "en": "Measured in the inspector, the space between the section edge and the step 1 icon equals the space left on the other side of the text."
+        },
+        "img": "images/home-10-responsive-steps.png",
+        "cap": {
+          "es": "Pasos en mobile — las líneas rojas marcan el espacio de cada lado.",
+          "en": "Steps on mobile — the red lines mark the space on each side."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "responsive",
+        "title": {
+          "es": "«What Our Clients Say About Us»: cuadrícula y una columna bajo 479 px",
+          "en": "“What Our Clients Say About Us”: grid, single column below 479px"
+        },
+        "body": [
+          {
+            "es": "En mobile, los testimonios de <b>«What Our Clients Say About Us»</b> deben mostrarse como una <b>cuadrícula separada por líneas</b>, no como tarjetas sueltas. En la captura, las líneas rojas marcan dónde van las divisiones: una vertical entre las columnas y una horizontal entre las filas.",
+            "en": "On mobile, the testimonials in <b>“What Our Clients Say About Us”</b> must display as a <b>grid separated by lines</b>, not as detached cards. In the screenshot, the red lines mark where the dividers go: a vertical one between the columns and a horizontal one between the rows."
+          },
+          {
+            "es": "<b>Por debajo de 479 px</b> la cuadrícula pasa a <b>una sola columna</b>, con cada testimonio separado del siguiente por una línea horizontal. Esa línea debe ser <b>del mismo color que el borde exterior del contenedor</b>, para que se lea como una división dentro de la misma caja y no como un elemento aparte.",
+            "en": "<b>Below 479px</b> the grid becomes a <b>single column</b>, with each testimonial separated from the next by a horizontal line. That line must be <b>the same colour as the container’s outer border</b>, so it reads as a division inside the same box rather than as a separate element."
+          }
+        ],
+        "ok": {
+          "es": "Entre 480 y 767 px se ven dos columnas con sus líneas divisorias; por debajo de 479 px queda una sola columna, y las líneas horizontales tienen exactamente el mismo color que el borde del contenedor.",
+          "en": "Between 480 and 767px there are two columns with their dividing lines; below 479px a single column is left, and the horizontal lines are exactly the same colour as the container’s border."
+        },
+        "img": "images/test-mobile-01.png",
+        "cap": {
+          "es": "Testimonios en cuadrícula — en rojo, las líneas que separan columnas y filas.",
+          "en": "Testimonials in a grid — in red, the lines separating columns and rows."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "responsive",
+        "title": {
+          "es": "Cards cortadas en «Stay Informed with the Latest Updates»",
+          "en": "Clipped cards in “Stay Informed with the Latest Updates”"
+        },
+        "body": [
+          {
+            "es": "En mobile, el carrusel de <b>«Stay Informed with the Latest Updates»</b> corta las cards contra los bordes del contenedor: se ve un pedazo de la card anterior y de la siguiente. Debe mostrar siempre <b>2 cards completas por slide</b>.",
+            "en": "On mobile, the <b>“Stay Informed with the Latest Updates”</b> carousel clips the cards against the container edges: a slice of the previous and the next card shows. It must always show <b>2 complete cards per slide</b>."
+          },
+          {
+            "es": "El espacio entre una card y la otra debe ser de <b>12 px</b>; hoy es de <b>40</b>. Con el gap corregido las dos cards entran enteras en el ancho del contenedor.",
+            "en": "The space between one card and the next must be <b>12px</b>; today it is <b>40</b>. With the gap fixed, both cards fit whole within the container width."
+          }
+        ],
+        "ok": {
+          "es": "En mobile, cada slide muestra dos cards enteras — ninguna cortada contra el borde del contenedor — y el espacio entre ellas mide 12 px en el inspector.",
+          "en": "On mobile, each slide shows two whole cards — none clipped against the container edge — and the space between them measures 12px in the inspector."
+        },
+        "img": "images/post-mobile-01.png",
+        "cap": {
+          "es": "Carrusel de posts en mobile — en rojo, el gap actual y la card cortada contra el borde derecho.",
+          "en": "Post carousel on mobile — in red, the current gap and the card clipped against the right edge."
+        }
+      }
+    ],
+    "product": [
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Degradado blanco sobre la imagen del hero",
+          "en": "White gradient over the hero image"
+        },
+        "body": [
+          {
+            "es": "En el hero de las Product Pages, la foto llega al panel azul con un <b>degradado blanco encima</b>, marcado en rojo. Ese degradado debe eliminarse en <b>todas</b> las páginas de producto: la foto tiene que verse a plena opacidad desde donde termina el panel azul hasta el borde derecho.",
+            "en": "In the Product Page hero, the photo meets the blue panel with a <b>white gradient on top of it</b>, marked in red. That gradient must be removed on <b>every</b> product page: the photo has to show at full opacity from where the blue panel ends all the way to the right edge."
+          }
+        ],
+        "ok": {
+          "es": "En el hero de cualquier producto, la foto mantiene el mismo color y contraste junto al panel azul que en el resto de la imagen: no queda una franja lavada.",
+          "en": "In any product hero, the photo keeps the same color and contrast next to the blue panel as in the rest of the image: no washed-out strip is left."
+        },
+        "img": "images/product-01-hero-gradient.png",
+        "cap": {
+          "es": "Hero de «Business Insurance» — el recuadro rojo marca la zona donde la imagen se lava.",
+          "en": "“Business Insurance” hero — the red box marks the area where the image washes out."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Trazo y border-bottom de los tabs",
+          "en": "Tab stroke weight and bottom border"
+        },
+        "body": [
+          {
+            "es": "Los tabs <b>«Industry»</b> y <b>«Products & Solutions»</b> deben tener <b>un solo grosor de trazo</b> en todo el contorno. Hoy el borde del tab y la línea que separa los tabs del contenido no miden lo mismo.",
+            "en": "The <b>“Industry”</b> and <b>“Products &amp; Solutions”</b> tabs must use <b>a single stroke weight</b> across the whole outline. Right now the tab border and the line that separates the tabs from the content don't match."
+          },
+          {
+            "es": "Además, el tab activo <b>no debe llevar border-bottom</b>: la línea inferior tiene que cortarse justo debajo del tab activo — marcada en rojo — para que se lea como una pestaña unida al panel de contenido y no como una caja cerrada.",
+            "en": "On top of that, the active tab <b>must not have a bottom border</b>: the line has to be interrupted right under the active tab — marked in red — so it reads as a tab joined to the content panel instead of a closed box."
+          }
+        ],
+        "snippets": [
+          {
+            "label": {
+              "es": "La pestaña activa tapa la línea, no la dibuja",
+              "en": "The active tab covers the line instead of drawing it"
+            },
+            "lang": "css",
+            "code": {
+              "es": "/* La línea divisoria vive en el contenedor de tabs. */\n.tabs {\n  border-bottom: 1px solid var(--line);\n}\n\n/* Cada tab usa el mismo grosor, sin borde inferior propio. */\n.tab {\n  border: 1px solid transparent;\n  border-bottom: 0;\n  /* Sube 1px para montarse sobre la línea y taparla. */\n  margin-bottom: -1px;\n}\n\n.tab[aria-selected=\"true\"] {\n  border-color: var(--line);\n  background: #fff;\n}",
+              "en": "/* The divider line lives on the tabs container. */\n.tabs {\n  border-bottom: 1px solid var(--line);\n}\n\n/* Every tab uses the same weight, with no bottom border. */\n.tab {\n  border: 1px solid transparent;\n  border-bottom: 0;\n  /* Shifts up 1px to sit on the line and cover it. */\n  margin-bottom: -1px;\n}\n\n.tab[aria-selected=\"true\"] {\n  border-color: var(--line);\n  background: #fff;\n}"
+            }
+          }
+        ],
+        "ok": {
+          "es": "El contorno del tab activo tiene el mismo grosor que la línea divisoria, y por debajo del tab activo no se ve ninguna línea: el tab y el panel de contenido quedan conectados.",
+          "en": "The active tab's outline matches the divider's weight, and no line shows underneath the active tab: the tab and the content panel read as connected."
+        },
+        "img": "images/product-02-tabs-border.png",
+        "cap": {
+          "es": "Tabs de la Product Page — el recuadro rojo marca el border-bottom que sobra bajo «Industry».",
+          "en": "Product Page tabs — the red box marks the leftover bottom border under “Industry”."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Figma de referencia",
+              "en": "Reference Figma"
+            },
+            "url": "https://www.figma.com/proto/vEgeZ3MRr5txX6jMCiWAPV/INS---Internal-Pages-Redesign?node-id=11125-1074&t=clvnQx4uUT9xft87-0&scaling=scale-down-width&content-scaling=fixed&page-id=11113%3A2894&starting-point-node-id=11125%3A1074&hotspot-hints=0&hide-ui=1"
+          }
+        ]
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Cada card de producto abre un preview, no el link",
+          "en": "Each product card opens a preview, not the link"
+        },
+        "body": [
+          {
+            "es": "En la grilla de productos, las cards chicas — <b>«HOA & Condo Insurance»</b>, <b>«Commercial Property Insurance»</b>, <b>«Healthcare Services Insurance»</b>… — <b>no deben navegar al link del producto</b>. Al hacer clic tienen que abrir, dentro de la misma grilla, un <b>preview</b> de ese producto: foto, título, descripción, bullets y los botones «Read More» y «Get a Quote». Al link del producto se llega desde «Read More».",
+            "en": "In the product grid, the small cards — <b>“HOA &amp; Condo Insurance”</b>, <b>“Commercial Property Insurance”</b>, <b>“Healthcare Services Insurance”</b>… — <b>must not navigate to the product link</b>. Clicking one has to open a <b>preview</b> of that product inside the same grid: photo, title, description, bullets and the “Read More” and “Get a Quote” buttons. The product link is reached from “Read More”."
+          },
+          {
+            "es": "<b>«Contractors Insurance»</b> ya es ese preview: sirve como modelo de tamaño y de contenido. Cada preview ocupa <b>el espacio de 4 item cards juntas</b> (2×2), se ubica al centro de la grilla y las demás cards se reacomodan alrededor.",
+            "en": "<b>“Contractors Insurance”</b> already is that preview: use it as the model for size and content. Each preview takes up <b>the space of 4 item cards together</b> (2×2), sits in the center of the grid, and the remaining cards rearrange around it."
+          },
+          {
+            "es": "La apertura debe tener <b>transición</b>: el preview crece hasta su tamaño final y las otras cards se desplazan con movimiento, no saltan de una posición a otra.",
+            "en": "Opening must be <b>animated</b>: the preview grows to its final size and the other cards move across, instead of jumping from one position to another."
+          }
+        ],
+        "ok": {
+          "es": "Al hacer clic en «HOA & Condo Insurance», la card se expande al tamaño de 4 cards en el centro de la grilla, con la foto y el contenido de ese producto, y las demás se acomodan con movimiento. Ninguna card lleva directamente al link del producto.",
+          "en": "Clicking “HOA & Condo Insurance” expands the card to the size of 4 cards in the center of the grid, with that product's photo and content, while the others move into place. No card goes straight to the product link."
+        },
+        "img": "images/product-03-card-preview.png",
+        "cap": {
+          "es": "«Contractors Insurance» es el preview ya resuelto: ese tamaño y ese contenido son los que debe abrir cada card.",
+          "en": "“Contractors Insurance” is the preview already built: that size and content are what every card should open."
+        }
+      }
+    ],
+    "about": [
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Timeline horizontal al hacer scroll",
+          "en": "Horizontal timeline on scroll"
+        },
+        "body": [
+          {
+            "es": "La línea de tiempo de <b>«Our Story — Two decades of deliberate growth»</b> debe <b>trasladarse de derecha a izquierda a medida que el usuario hace scroll vertical</b> en la página: los años avanzan desde 2002 hacia los más recientes sin que haya que arrastrar nada ni usar flechas.",
+            "en": "The <b>“Our Story — Two decades of deliberate growth”</b> timeline must <b>travel from right to left as the user scrolls the page vertically</b>: the years advance from 2002 towards the most recent ones, with no dragging and no arrows."
+          },
+          {
+            "es": "En el sitio de referencia está implementado y funcionando; conviene mirarlo antes de elegir la librería.",
+            "en": "It is implemented and working on the reference site; worth looking at it before picking a library."
+          }
+        ],
+        "ok": {
+          "es": "Al hacer scroll con la rueda del mouse sobre la sección, los años se desplazan hacia la izquierda; cuando la línea de tiempo termina, la página sigue bajando con normalidad.",
+          "en": "Scrolling with the mouse wheel over the section moves the years to the left; once the timeline ends, the page keeps scrolling down normally."
+        },
+        "img": "images/about-01-timeline-horizontal.png",
+        "cap": {
+          "es": "Sección «Our Story» — hoy la línea de tiempo se corta a la derecha y no avanza con el scroll.",
+          "en": "“Our Story” section — the timeline is currently cut off on the right and doesn't advance with scroll."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Timeline de referencia",
+              "en": "Reference timeline"
+            },
+            "url": "https://inszone-about-us-timeline-horizonta.vercel.app/"
+          }
+        ]
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Nombres de los estados visibles en el mapa",
+          "en": "State names visible on the map"
+        },
+        "body": [
+          {
+            "es": "El mapa debe mostrar <b>el nombre de cada estado desde el inicio</b>, sin ninguna interacción de por medio. Hoy solo se ven los pines y el usuario no puede saber qué estado está mirando.",
+            "en": "The map must show <b>each state's name from the start</b>, with no interaction required. Right now only the pins are visible and the user can't tell which state they're looking at."
+          },
+          {
+            "es": "El hover queda reservado para <b>una sola cosa</b>: mostrar las locaciones de ese estado.",
+            "en": "Hover is reserved for <b>one thing only</b>: showing that state's locations."
+          }
+        ],
+        "ok": {
+          "es": "Al cargar la página se leen los nombres de los estados sobre el mapa sin mover el mouse; al pasar por encima de un estado aparecen únicamente sus locaciones.",
+          "en": "On page load the state names are readable on the map without moving the mouse; hovering a state reveals only its locations."
+        },
+        "img": "images/about-02-map-state-names.png",
+        "cap": {
+          "es": "Mapa actual — solo pines, sin nombres de estado.",
+          "en": "Current map — pins only, no state names."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Figma de referencia",
+              "en": "Reference Figma"
+            },
+            "url": "https://www.figma.com/proto/vEgeZ3MRr5txX6jMCiWAPV/INS---Internal-Pages-Redesign?node-id=11125-1074&t=clvnQx4uUT9xft87-0&scaling=scale-down-width&content-scaling=fixed&page-id=11113%3A2894&starting-point-node-id=11125%3A1074&hotspot-hints=0&hide-ui=1"
+          }
+        ]
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Borde superior redondeado en todas las secciones",
+          "en": "Rounded top edge on every section"
+        },
+        "body": [
+          {
+            "es": "Igual que en el Home: en mobile <b>todas</b> las secciones de About Us deben llevar las dos esquinas de arriba redondeadas en <b>24 px</b>, para que cada una se lea como si se montara sobre la anterior. Hoy solo algunas lo cumplen.",
+            "en": "Same as on the Home page: on mobile <b>every</b> About Us section must have both top corners rounded at <b>24px</b>, so each one reads as if stacked on top of the previous one. Only some of them do today."
+          },
+          {
+            "es": "Las capturas marcan en rojo las uniones: «Our Commitment» con «What Makes Us Different?», y «We do the shopping for you!» con el bloque del Top 100, «Grow With Inszone» y el footer.",
+            "en": "The screenshots mark the seams in red: “Our Commitment” with “What Makes Us Different?”, and “We do the shopping for you!” with the Top 100 block, “Grow With Inszone” and the footer."
+          }
+        ],
+        "ok": {
+          "es": "Bajando por About Us en mobile, ninguna sección empieza con el borde recto: en cada unión se ven las dos esquinas redondeadas y el fondo de la sección anterior asomando por el recorte.",
+          "en": "Scrolling down About Us on mobile, no section starts with a straight edge: at every seam both corners are rounded and the previous section’s background shows through the cut."
+        },
+        "mediaLayout": "grid",
+        "img": "images/about-mobile-01.png",
+        "cap": {
+          "es": "«Our Commitment» y «What Makes Us Different?».",
+          "en": "“Our Commitment” and “What Makes Us Different?”."
+        },
+        "shots": [
+          {
+            "img": "images/about-mobile-02.png",
+            "cap": {
+              "es": "«We do the shopping for you!», el bloque del Top 100, «Grow With Inszone» y el footer.",
+              "en": "“We do the shopping for you!”, the Top 100 block, “Grow With Inszone” and the footer."
+            }
+          }
+        ]
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Padding superior de «What Makes Us Different?»",
+          "en": "Top padding of “What Makes Us Different?”"
+        },
+        "body": [
+          {
+            "es": "En mobile, la sección <b>«What Makes Us Different?»</b> arranca con una franja vacía muy alta antes del título — el recuadro rojo de la captura. Ese espacio debe reducirse al mismo que usan el resto de las secciones de la página.",
+            "en": "On mobile, the <b>“What Makes Us Different?”</b> section starts with a very tall empty band before the heading — the red box in the screenshot. That space must come down to the same one the page’s other sections use."
+          }
+        ],
+        "ok": {
+          "es": "El título «What Makes Us Different?» arranca a la misma distancia del borde superior de su sección que «Our Commitment» de la suya.",
+          "en": "The “What Makes Us Different?” heading starts at the same distance from the top edge of its section as “Our Commitment” does from its own."
+        },
+        "img": "images/about-mobile-03.png",
+        "cap": {
+          "es": "«What Makes Us Different?» en mobile — el recuadro rojo marca el espacio que sobra sobre el título.",
+          "en": "“What Makes Us Different?” on mobile — the red box marks the space left over above the heading."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Franja blanca entre la última sección y el footer",
+          "en": "White band between the last section and the footer"
+        },
+        "body": [
+          {
+            "es": "En mobile, entre <b>«Grow With Inszone»</b> y el footer queda una <b>franja blanca</b> — el recuadro rojo de la captura. Debe eliminarse: el footer tiene que empezar exactamente donde termina la sección.",
+            "en": "On mobile, a <b>white band</b> is left between <b>“Grow With Inszone”</b> and the footer — the red box in the screenshot. It must go: the footer has to start exactly where the section ends."
+          },
+          {
+            "es": "Sin esa franja, el footer queda montado sobre la sección con sus esquinas superiores redondeadas, que es el efecto pedido en <b>«Footer con las esquinas superiores redondeadas en mobile»</b> de los comentarios generales. Hoy ese espacio en blanco es justamente lo que impide que el montaje se vea.",
+            "en": "With that band gone, the footer sits on top of the section with its rounded top corners — the effect asked for in <b>“Footer with rounded top corners on mobile”</b> in the general comments. Right now that white gap is exactly what stops the overlap from reading."
+          }
+        ],
+        "ok": {
+          "es": "En mobile, el borde superior del footer toca el final de «Grow With Inszone»: no queda ninguna franja blanca entre los dos y, por las esquinas redondeadas del footer, asoma el azul de la sección.",
+          "en": "On mobile, the footer’s top edge meets the end of “Grow With Inszone”: no white band is left between them and, through the footer’s rounded corners, the section’s blue shows."
+        },
+        "img": "images/about-mobile-04.png",
+        "cap": {
+          "es": "Final de About Us en mobile — el recuadro rojo marca la franja blanca entre la sección y el footer.",
+          "en": "End of About Us on mobile — the red box marks the white band between the section and the footer."
+        }
+      }
+    ],
+    "ma": [
+      {
+        "cat": "performance",
+        "title": {
+          "es": "Exportar los gráficos vectoriales como SVG",
+          "en": "Export vector graphics as SVG"
+        },
+        "body": [
+          {
+            "es": "El gráfico circular <b>«CUSTOMERS / CARRIERS / TEAM»</b> de la sección <b>«Who is Inszone?»</b> debe exportarse desde Figma como <b>SVG</b>, y lo mismo vale para el resto de las piezas vectoriales del sitio: iconos, diagramas y logos.",
+            "en": "The <b>“CUSTOMERS / CARRIERS / TEAM”</b> circular graphic in the <b>“Who is Inszone?”</b> section must be exported from Figma as <b>SVG</b>, and the same goes for every other vector piece on the site: icons, diagrams and logos."
+          },
+          {
+            "es": "Un SVG es texto: pesa una fracción de lo que pesa el PNG equivalente, se ve nítido en cualquier pantalla y a cualquier zoom — retina incluida — y no obliga a exportar versiones 2x y 3x. El PNG del mismo gráfico se ve borroso apenas se escala.",
+            "en": "An SVG is text: it weighs a fraction of the equivalent PNG, stays sharp on any screen and at any zoom level — retina included — and removes the need for 2x and 3x exports. The PNG of the same graphic goes blurry as soon as it is scaled."
+          },
+          {
+            "es": "<b>Cómo se exporta desde Figma:</b> con el grupo seleccionado, el panel <b>Export</b> del inspector de la derecha, formato <b>SVG</b> y <b>Export Group</b>. La segunda captura muestra el panel con los valores puestos.",
+            "en": "<b>How to export it from Figma:</b> with the group selected, the <b>Export</b> panel in the right-hand inspector, format <b>SVG</b>, then <b>Export Group</b>. The second screenshot shows the panel with the values set."
+          },
+          {
+            "es": "Dejamos el SVG de este gráfico listo para descargar, así no bloquea el avance. Para los próximos recursos vectoriales, el panel de Export queda a mano por si al equipo le resulta más cómodo sacarlos directamente del Figma.",
+            "en": "We are including this graphic’s SVG ready to download, so it does not hold anything up. For the next vector assets, the Export panel is there in case the team finds it easier to pull them straight from Figma."
+          }
+        ],
+        "ok": {
+          "es": "En el inspector, el gráfico es un <code>&lt;svg&gt;</code> o un <code>&lt;img src=\"….svg\"&gt;</code>, y con el zoom del navegador al 400% los bordes y el texto siguen nítidos.",
+          "en": "In the inspector the graphic is an <code>&lt;svg&gt;</code> or an <code>&lt;img src=\"….svg\"&gt;</code>, and at 400% browser zoom the edges and the text stay sharp."
+        },
+        "img": "images/ma-01-svg-export.png",
+        "cap": {
+          "es": "Sección «Who is Inszone?» — el gráfico es vectorial y hoy se carga como imagen de mapa de bits.",
+          "en": "“Who is Inszone?” section — the graphic is vector artwork but is currently served as a bitmap."
+        },
+        "shots": [
+          {
+            "img": "images/ma-02-svg-figma-export.png",
+            "cap": {
+              "es": "Panel <b>Export</b> de Figma con el grupo seleccionado: formato SVG y <b>Export Group</b>.",
+              "en": "Figma’s <b>Export</b> panel with the group selected: SVG format and <b>Export Group</b>."
+            }
+          }
+        ],
+        "refs": [
+          {
+            "label": {
+              "es": "Descargar el SVG del gráfico",
+              "en": "Download the graphic’s SVG"
+            },
+            "url": "/images/graphic.svg",
+            "download": true
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Bloque de los tres pilares fuera del container",
+          "en": "Three-pillar block breaks the container"
+        },
+        "body": [
+          {
+            "es": "El bloque gris con las tarjetas <b>«Powerful Past, Prosperous Future»</b>, <b>«An Unparalleled Culture»</b> y <b>«A Strong Sense of Community»</b> debe alinearse al <b>ancho del container</b> del sitio. Hoy queda metido hacia adentro respecto de los márgenes del header, marcados con las líneas rojas.",
+            "en": "The grey block holding the <b>“Powerful Past, Prosperous Future”</b>, <b>“An Unparalleled Culture”</b> and <b>“A Strong Sense of Community”</b> cards must align to the site's <b>container width</b>. It currently sits inset from the header's margins, marked with the red lines."
+          }
+        ],
+        "ok": {
+          "es": "El borde izquierdo del bloque gris coincide con el logo del header y el derecho con el número de teléfono.",
+          "en": "The grey block's left edge lines up with the header logo and its right edge with the phone number."
+        },
+        "img": "images/ma-02-container-align.png",
+        "cap": {
+          "es": "Las líneas rojas marcan el ancho del container; el bloque gris no llega a ninguno de los dos lados.",
+          "en": "The red lines mark the container width; the grey block reaches neither side."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "«Testimonials» no ocupa el ancho del container",
+          "en": "“Testimonials” doesn't fill the container width"
+        },
+        "body": [
+          {
+            "es": "La sección <b>«Testimonials»</b> debe ocupar el <b>100% del ancho del container</b>. Hoy queda un espacio vacío a la derecha, marcado en rojo: hay que revisar el ancho de cada card de testimonio para que las dos llenen la fila completa.",
+            "en": "The <b>“Testimonials”</b> section must fill <b>100% of the container width</b>. There is an empty gap on the right today, marked in red: each testimonial card's width needs reviewing so that the two of them fill the whole row."
+          },
+          {
+            "es": "En la página de <b>Careers</b> del staging esta sección <b>ya está resuelta</b> con la maquetación y los estilos del diseño de Figma: cada testimonio respeta su propia altura —a 1440 px las cuatro tarjetas miden 314, 314, 275 y 255— ninguno tiene scroll interno, y todos llevan el signo de comillas decorativo.",
+            "en": "On the staging <b>Careers</b> page this section is <b>already solved</b>, with the markup and styles from the Figma design: each testimonial keeps its own height — at 1440px the four cards measure 314, 314, 275 and 255 — none has an inner scrollbar, and every one carries the decorative quotation mark."
+          },
+          {
+            "es": "Por eso el pedido no es rehacerlo acá, sino <b>extraer un único componente reutilizable</b> a partir del de Careers y usarlo en todas las páginas internas que lleven testimonios, esta incluida. Así el comentario siguiente —alturas y comillas— se resuelve solo.",
+            "en": "So the ask is not to rebuild it here, but to <b>extract a single reusable component</b> from the Careers one and use it on every internal page with testimonials, this one included. That also resolves the next comment — heights and quotation marks — on its own."
+          },
+          {
+            "es": "La única diferencia en Careers son las <b>flechas de navegación</b>, que están distintas al diseño; eso se comenta en el feedback de esa página y no afecta a lo de acá.",
+            "en": "The one difference on Careers is the <b>navigation arrows</b>, which don’t match the design; that is covered in that page’s own feedback and doesn’t affect this."
+          }
+        ],
+        "ok": {
+          "es": "El borde derecho de la segunda card de testimonio llega al mismo margen que el teléfono del header, dentro de la sección no queda una franja vacía, y la sección usa el mismo componente que Careers en lugar de una copia con sus propios estilos.",
+          "en": "The right edge of the second testimonial card reaches the same margin as the header phone number, no empty strip is left inside the section, and the section uses the same component as Careers instead of a copy with its own styles."
+        },
+        "img": "images/ma-03-testimonials-current.png",
+        "cap": {
+          "es": "Sección «Testimonials» actual — el recuadro rojo marca el espacio que sobra a la derecha.",
+          "en": "Current “Testimonials” section — the red box marks the space left over on the right."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Careers — la misma sección, ya bien resuelta",
+              "en": "Careers — the same section, already done right"
+            },
+            "url": "https://inszoneinsurance-emdash-staging.dev.apps.cloud.inszone.net/careers"
+          },
+          {
+            "label": {
+              "es": "Figma de referencia",
+              "en": "Reference Figma"
+            },
+            "url": "https://www.figma.com/proto/UpEOBiVgiO82fT0ThjLnTv/INS---Internal-Pages-Redesign---Phase-2?node-id=15007-4267&p=f&t=32lHwLxt3eyYocV1-0&scaling=scale-down-width&content-scaling=fixed&page-id=12170%3A4449&hotspot-hints=0&hide-ui=1"
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Altura propia de cada testimonio y comillas decorativas",
+          "en": "Each testimonial keeps its own height, plus the decorative quotes"
+        },
+        "body": [
+          {
+            "es": "Cada item de <b>«Testimonials»</b> debe <b>respetar su propia altura</b> y mostrar el texto completo, <b>sin scroll interno</b>. Hoy el testimonio de Thomas Polvogt está recortado dentro de una caja con barra de scroll.",
+            "en": "Every <b>“Testimonials”</b> item must <b>keep its own height</b> and show its full text, with <b>no inner scrollbar</b>. Thomas Polvogt's testimonial is currently clipped inside a box with a scrollbar."
+          },
+          {
+            "es": "Que las cards queden con <b>alturas distintas es intencional</b>: ese desnivel es lo que le da dinamismo a la sección, así que no hay que igualarlas.",
+            "en": "The cards ending up at <b>different heights is intentional</b>: that unevenness is what gives the section its dynamism, so they must not be equalized."
+          },
+          {
+            "es": "Falta además el <b>símbolo de comillas decorativo</b> en cada testimonio, abajo a la derecha de la card, como en el diseño de referencia.",
+            "en": "The <b>decorative quotation mark</b> is also missing from each testimonial, at the bottom right of the card, as in the reference design."
+          }
+        ],
+        "ok": {
+          "es": "Ninguna card de testimonio tiene barra de scroll, se lee el texto completo de las dos, sus alturas son distintas entre sí, y cada una muestra las comillas decorativas abajo a la derecha.",
+          "en": "No testimonial card has a scrollbar, both texts can be read in full, the two cards have different heights, and each one shows the decorative quotes at the bottom right."
+        },
+        "img": "images/ma-04-testimonials-reference.png",
+        "cap": {
+          "es": "Diseño de referencia — alturas distintas, texto completo y las comillas decorativas en cada card.",
+          "en": "Reference design — different heights, full text and the decorative quotes on each card."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Figma de referencia",
+              "en": "Reference Figma"
+            },
+            "url": "https://www.figma.com/proto/UpEOBiVgiO82fT0ThjLnTv/INS---Internal-Pages-Redesign---Phase-2?node-id=15007-4267&p=f&t=32lHwLxt3eyYocV1-0&scaling=scale-down-width&content-scaling=fixed&page-id=12170%3A4449&hotspot-hints=0&hide-ui=1"
+          }
+        ]
+      },
+      {
+        "cat": "performance",
+        "title": {
+          "es": "«Our Services» maquetado en HTML, no como imagen",
+          "en": "“Our Services” built in HTML, not as an image"
+        },
+        "body": [
+          {
+            "es": "En la sección <b>«Our Services:»</b>, las tres cards — <b>«Business Insurance»</b>, <b>«Personal Insurance»</b> y <b>«Employee Benefits»</b> — deben <b>maquetarse en HTML</b>: la foto como imagen de fondo, y el título y la descripción como texto encima. Hoy cada card es una sola imagen estática con el texto quemado dentro.",
+            "en": "In the <b>“Our Services:”</b> section, the three cards — <b>“Business Insurance”</b>, <b>“Personal Insurance”</b> and <b>“Employee Benefits”</b> — must be <b>built in HTML</b>: the photo as a background image, and the title and description as text on top. Each card is currently a single static image with the text baked into it."
+          },
+          {
+            "es": "Con el texto dentro de la imagen no se puede seleccionar ni traducir, no lo leen Google ni un lector de pantalla, se ve borroso en pantallas retina y cualquier cambio de copy obliga a volver a exportar las tres piezas.",
+            "en": "With the text inside the image it can't be selected or translated, Google and screen readers can't read it, it looks blurry on retina screens, and any copy change means re-exporting all three pieces."
+          }
+        ],
+        "ok": {
+          "es": "Se puede seleccionar con el mouse el texto «Business Insurance» dentro de la card, y en el inspector el título y la descripción son nodos de texto, no parte del archivo de imagen.",
+          "en": "The text “Business Insurance” can be selected with the mouse inside the card, and in the inspector the title and description are text nodes, not part of the image file."
+        },
+        "img": "images/ma-05-services-cards-html.png",
+        "cap": {
+          "es": "Sección «Our Services:» — las tres cards son imágenes planas con el texto quemado.",
+          "en": "“Our Services:” section — the three cards are flat images with the text baked in."
+        }
+      }
+    ],
+    "careers": [
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Flechas del carrusel encima de los testimonios",
+          "en": "Carousel arrows sitting on top of the testimonials"
+        },
+        "body": [
+          {
+            "es": "En <b>«Testimonials»</b>, las flechas de navegación están <b>dentro</b> de la caja: se apoyan sobre el borde de las cards y tapan parte del contenido — en la captura, la última línea del testimonio de Sarah M. queda cortada detrás de la flecha izquierda.",
+            "en": "In <b>“Testimonials”</b>, the navigation arrows sit <b>inside</b> the box: they rest on the cards’ edge and cover part of the content — in the screenshot, the last line of Sarah M.’s testimonial is clipped behind the left arrow."
+          },
+          {
+            "es": "Deben quedar <b>fuera</b> de la caja de testimonios, una a cada lado y centradas en vertical, <b>tal como ya están en la página de Mergers & Acquisitions</b>. Las flechas rojas de la captura marcan hacia dónde.",
+            "en": "They must sit <b>outside</b> the testimonials box, one on each side and vertically centred, <b>exactly as they already are on the Mergers &amp; Acquisitions page</b>. The red arrows in the screenshot show where they should go."
+          }
+        ],
+        "ok": {
+          "es": "Ninguna flecha se superpone a una card: queda aire entre el borde de la caja de testimonios y cada flecha, y el texto de los dos testimonios se lee completo.",
+          "en": "No arrow overlaps a card: there is space between the edge of the testimonials box and each arrow, and both testimonials can be read in full."
+        },
+        "img": "images/careers-testimonials.png",
+        "cap": {
+          "es": "«Testimonials» de Careers — las flechas se apoyan sobre las cards; las marcas rojas indican hacia dónde deben salir.",
+          "en": "“Testimonials” on Careers — the arrows rest on the cards; the red marks show where they should move to."
+        },
+        "refs": [
+          {
+            "label": {
+              "es": "Mergers & Acquisitions — las flechas ya están afuera",
+              "en": "Mergers & Acquisitions — the arrows are already outside"
+            },
+            "url": "https://inszoneinsurance-emdash-staging.dev.apps.cloud.inszone.net/mergers-and-acquisitions"
+          },
+          {
+            "label": {
+              "es": "Careers",
+              "en": "Careers"
+            },
+            "url": "https://inszoneinsurance-emdash-staging.dev.apps.cloud.inszone.net/careers"
+          }
+        ]
+      }
+    ]
+  },
+  "checklist": {
+    "locations": [
+      [
+        {
+          "es": "Buscador de oficinas",
+          "en": "Office finder"
+        },
+        {
+          "es": "Búsqueda por Zip Code o estado y velocidad de respuesta.",
+          "en": "Search by Zip Code or state, and response speed."
+        }
+      ],
+      [
+        {
+          "es": "Listado y mapa",
+          "en": "Listing and map"
+        },
+        {
+          "es": "Agrupación por estado, paginación y sincronía entre listado y mapa.",
+          "en": "Grouping by state, pagination and sync between listing and map."
+        }
+      ],
+      [
+        {
+          "es": "Ficha de localidad",
+          "en": "Location detail"
+        },
+        {
+          "es": "Datos de contacto, horarios, equipo local y CTA de cotización.",
+          "en": "Contact details, hours, local team and quote CTA."
+        }
+      ],
+      [
+        {
+          "es": "Responsive",
+          "en": "Responsive"
+        },
+        {
+          "es": "Mapa y listado en Tablet y Mobile.",
+          "en": "Map and listing on Tablet and Mobile."
+        }
+      ]
+    ],
+    "contact": [
+      [
+        {
+          "es": "Formulario de contacto",
+          "en": "Contact form"
+        },
+        {
+          "es": "Campos, validación en vivo, mensajes de error y confirmación.",
+          "en": "Fields, live validation, error messages and confirmation."
+        }
+      ],
+      [
+        {
+          "es": "Datos de contacto",
+          "en": "Contact details"
+        },
+        {
+          "es": "Teléfono, email y horarios visibles sin tener que hacer scroll.",
+          "en": "Phone, email and hours visible without scrolling."
+        }
+      ],
+      [
+        {
+          "es": "Ruteo del mensaje",
+          "en": "Message routing"
+        },
+        {
+          "es": "A qué oficina o departamento llega cada tipo de consulta.",
+          "en": "Which office or department each type of enquiry reaches."
+        }
+      ],
+      [
+        {
+          "es": "Responsive",
+          "en": "Responsive"
+        },
+        {
+          "es": "Formulario y mapa en Tablet y Mobile.",
+          "en": "Form and map on Tablet and Mobile."
+        }
+      ]
+    ],
+    "blog": [
+      [
+        {
+          "es": "Listado de artículos",
+          "en": "Article listing"
+        },
+        {
+          "es": "Filtros por categoría, paginación y tarjetas del listado.",
+          "en": "Category filters, pagination and listing cards."
+        }
+      ],
+      [
+        {
+          "es": "Ficha del post",
+          "en": "Post detail"
+        },
+        {
+          "es": "Tipografía de lectura, imágenes, autor y tiempo de lectura.",
+          "en": "Reading typography, images, author and reading time."
+        }
+      ],
+      [
+        {
+          "es": "Artículos relacionados",
+          "en": "Related articles"
+        },
+        {
+          "es": "Criterio de relación y ubicación del bloque.",
+          "en": "Relation criteria and placement of the block."
+        }
+      ],
+      [
+        {
+          "es": "Responsive",
+          "en": "Responsive"
+        },
+        {
+          "es": "Lectura del artículo en Tablet y Mobile.",
+          "en": "Reading the article on Tablet and Mobile."
+        }
+      ]
+    ]
+  },
+  "ui": {
+    "sections": {
+      "es": "Secciones",
+      "en": "Sections"
+    },
+    "zoom": {
+      "es": "Clic para ampliar",
+      "en": "Click to enlarge"
+    },
+    "verify": {
+      "es": "Cómo se verifica",
+      "en": "How to verify"
+    },
+    "pending": {
+      "es": "Pendiente de revisión",
+      "en": "Pending review"
+    },
+    "emptyTitle": {
+      "es": "Comentarios en preparación",
+      "en": "Comments in progress"
+    },
+    "emptyBody": {
+      "es": "Todavía no se han cargado los comentarios de esta página. Se irán agregando con el mismo formato del Home: la captura a la izquierda y el comentario señalando el punto exacto a la derecha.",
+      "en": "No comments have been added for this page yet. They will follow the same format as the Home page: the screenshot on the left and the comment pointing to the exact spot on the right."
+    },
+    "viewCode": {
+      "es": "Ver código",
+      "en": "View code"
+    },
+    "suggestionsTitle": {
+      "es": "Sugerencias",
+      "en": "Suggestions"
+    },
+    "suggestionsLead": {
+      "es": "Propuestas opcionales: no son requisitos del rediseño. Cada una viene con una implementación de referencia, por si el equipo decide tomarla.",
+      "en": "Optional proposals: these are not redesign requirements. Each one comes with a reference implementation, in case the team decides to take it."
+    },
+    "viewDesktop": {
+      "es": "Desktop",
+      "en": "Desktop"
+    },
+    "viewMobile": {
+      "es": "Mobile",
+      "en": "Mobile"
+    },
+    "viewEmpty": {
+      "es": "No hay comentarios de esta vista en esta página.",
+      "en": "No comments for this view on this page."
+    }
+  },
+  "catLabel": {
+    "interaccion": {
+      "es": "Interacción",
+      "en": "Interaction"
+    },
+    "layout": {
+      "es": "Layout",
+      "en": "Layout"
+    },
+    "performance": {
+      "es": "Performance",
+      "en": "Performance"
+    },
+    "responsive": {
+      "es": "Responsive",
+      "en": "Responsive"
+    }
+  },
+  "icons": {
+    "globe": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M2 12h20M12 2a15.3 15.3 0 010 20a15.3 15.3 0 010-20\"/></svg>",
+    "home": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 10.5L12 3l9 7.5\"/><path d=\"M5 9.5V20h14V9.5\"/><path d=\"M9.5 20v-5.5h5V20\"/></svg>",
+    "shield": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 22s8-3.5 8-9.5V5.5L12 2.5 4 5.5V12.5C4 18.5 12 22 12 22z\"/></svg>",
+    "pin": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 1116 0z\"/><circle cx=\"12\" cy=\"10.5\" r=\"3\"/></svg>",
+    "users": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"8\" r=\"3.5\"/><path d=\"M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6\"/><path d=\"M16 5.2a3.5 3.5 0 010 6.6M17.5 14.4c2.4.6 4 2.5 4 5.6\"/></svg>",
+    "mail": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"2.5\" y=\"4.5\" width=\"19\" height=\"15\" rx=\"3\"/><path d=\"M3.5 7l7.4 5.2a2 2 0 002.2 0L20.5 7\"/></svg>",
+    "news": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M17 20H5a2 2 0 01-2-2V5a1 1 0 011-1h12a1 1 0 011 1v13a2 2 0 002 2 2 2 0 002-2V9h-4\"/><path d=\"M7 8h7M7 12h7M7 16h4\"/></svg>",
+    "zoom": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"M11 8.5v5M8.5 11h5M16.5 16.5L21 21\"/></svg>",
+    "link": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M10 13.5a4 4 0 006 .5l2.5-2.5a4.2 4.2 0 00-6-6L11 7\"/><path d=\"M14 10.5a4 4 0 00-6-.5L5.5 12.5a4.2 4.2 0 006 6L13 17\"/></svg>",
+    "clock": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 8v4l2 2\"/></svg>",
+    "check": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9.5\"/><path d=\"M8 12.3l2.6 2.6L16 9.5\"/></svg>",
+    "dot": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/></svg>",
+    "merge": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"12\" r=\"6\"/><circle cx=\"15\" cy=\"12\" r=\"6\"/></svg>",
+    "code": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M9.5 7L5 12l4.5 5M14.5 7l4.5 5-4.5 5\"/></svg>",
+    "bulb": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M9.5 17.5h5M10 21h4\"/><path d=\"M12 3a6 6 0 013.6 10.8c-.7.5-1.1 1.2-1.1 2H9.5c0-.8-.4-1.5-1.1-2A6 6 0 0112 3z\"/></svg>",
+    "briefcase": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"13\" rx=\"3\"/><path d=\"M9 7V5.5a2 2 0 012-2h2a2 2 0 012 2V7M2.5 12.5h19\"/></svg>"
+  },
+  "refSite": "https://inszoneinsurance.vercel.app/"
+}

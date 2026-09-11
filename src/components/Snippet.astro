@@ -1,0 +1,40 @@
+---
+/**
+ * Código de un comentario.
+ *
+ * En el globo queda solo el botón: el código se abre en un modal (`codebox`),
+ * porque un bloque largo dentro del comentario empuja el criterio de
+ * verificación fuera de pantalla. El código igual se imprime acá, oculto —
+ * el modal lo clona de `.s-code`, y sin JavaScript el CSS lo muestra tal cual.
+ *
+ * `code` acepta un string o un par cuando los comentarios cambian con el idioma.
+ */
+import T from './T.astro'
+import Icon from './Icon.astro'
+import { ui, type Snippet } from '../data/content'
+
+interface Props {
+  snippet: Snippet
+}
+
+const { snippet } = Astro.props
+const { code } = snippet
+const single = typeof code === 'string' ? code : code.es === code.en ? code.es : null
+---
+
+<div class="snippet">
+  <button class="s-open" type="button" aria-haspopup="dialog">
+    <span class="s-file"><T text={snippet.label} /></span>
+    <span class="s-lang">{snippet.lang}</span>
+    <span class="s-cue"><Icon name="code" /> <T text={ui.viewCode} /></span>
+  </button>
+
+  <div class="s-code">
+    {single !== null
+      ? <pre><code>{single}</code></pre>
+      : <Fragment>
+          <pre data-lang="es"><code>{( code as { es: string }).es}</code></pre>
+          <pre data-lang="en" lang="en"><code>{( code as { en: string }).en}</code></pre>
+        </Fragment>}
+  </div>
+</div>

@@ -1,0 +1,27 @@
+---
+/**
+ * Pestañas Desktop / Mobile de una página.
+ *
+ * No filtran en JavaScript: marcan `data-view` en el <html> y el CSS esconde
+ * los comentarios de la otra vista — el mismo mecanismo que el toggle de
+ * idioma. Así la elección sobrevive a la navegación sin re-renderizar nada.
+ */
+import T from './T.astro'
+import { ui } from '../data/content'
+
+interface Props {
+  desktop: number
+  mobile: number
+}
+
+const { desktop, mobile } = Astro.props
+---
+
+<div class="view-tabs" role="group" aria-label="Desktop / Mobile">
+  <button type="button" class="view-tab" data-set-view="desktop" aria-pressed="true">
+    <T text={ui.viewDesktop} /><span class="v-count">{desktop}</span>
+  </button>
+  <button type="button" class="view-tab" data-set-view="mobile" aria-pressed="false">
+    <T text={ui.viewMobile} /><span class="v-count">{mobile}</span>
+  </button>
+</div>

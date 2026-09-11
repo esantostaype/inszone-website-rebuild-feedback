@@ -1,0 +1,93 @@
+---
+/** Un comentario: captura a la izquierda, observación a la derecha. */
+import T from './T.astro'
+import Icon from './Icon.astro'
+import Snippet from './Snippet.astro'
+import { catLabel, ui, viewOf, type Item } from '../data/content'
+
+interface Props {
+  item: Item
+  index: number
+}
+
+const { item, index } = Astro.props
+
+/* Las sugerencias llevan su propia numeración — S01, S02 — para que en un
+   ticket o en una reunión no se confundan con los requisitos. */
+const suggestion = item.kind === 'suggestion'
+const num = ( suggestion ? 'S' : '' ) + String( index ).padStart( 2, '0' )
+const anchor = ( suggestion ? 's' : 'c' ) + index
+
+/* Las rutas del JSON son relativas (images/…); en el sitio viven en la raíz. */
+const src = ( path: string ): string => ( path.startsWith( '/' ) ? path : `/${ path }` )
+
+/* La principal y las extra se tratan igual: el modal de zoom engancha
+   cualquier .shot[data-full], así que no hay nada que registrar aparte. */
+const shots = [
+  ...( item.img && item.cap ? [{ img: item.img, cap: item.cap }] : [] ),
+  ...( item.shots ?? [] ),
+]
+---
+
+<article
+  class={`fb-item${ shots.length ? '' : ' no-media' }${ suggestion ? ' is-suggestion' : '' }`}
+  id={anchor}
+  data-view={viewOf( item )}
+>
+  {shots.length > 0 && (
+    <div class={`fb-media reveal-left${ item.mediaLayout === 'grid' ? ' is-grid' : '' }`}>
+      {shots.map(( shot ) => (
+        <figure
+          class="shot"
+          data-full={src( shot.img )}
+          data-caption-es={shot.cap.es}
+          data-caption-en={shot.cap.en}
+        >
+          <img src={src( shot.img )} alt={item.title.en} loading="lazy" />
+          <span class="zoom-hint"><Icon name="zoom" /> <T text={ui.zoom} /></span>
+        </figure>
+      ))}
+    </div>
+  )}
+
+  <div class="fb-note reveal-right">
+    <div class="bubble">
+      <div class="bubble-head">
+        <span class={`num${ suggestion ? ' num-sug' : '' }`}>{num}</span>
+        <span class={`chip c-${ item.cat }`}><T text={catLabel[ item.cat ]} /></span>
+      </div>
+
+      <h3><T text={item.title} /></h3>
+
+      {item.body.map(( paragraph ) => <p><T text={paragraph} /></p>)}
+
+      {item.snippets?.map(( snippet ) => <Snippet snippet={snippet} />)}
+
+      {item.ok && (
+        <p class="verify">
+          <span class="v-ico"><Icon name="check" /></span>
+          <span class="v-txt"><b><T text={ui.verify} />:</b> <T text={item.ok} /></span>
+        </p>
+      )}
+
+      {item.refs?.length && (
+        <ul class="refs">
+          {item.refs.map(( reference ) => (
+            <li>
+              <span class="r-ico"><Icon name="link" /></span>
+              <span class="r-txt">
+                <span class="r-label"><T text={reference.label} /></span>
+                <a
+                  href={reference.url}
+                  download={reference.download ? '' : undefined}
+                  target={reference.download ? undefined : '_blank'}
+                  rel="noopener"
+                >{reference.url}</a>
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </div>
+</article>

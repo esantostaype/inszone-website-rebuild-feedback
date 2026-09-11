@@ -1,0 +1,125 @@
+---
+/** Cuerpo de una página: encabezado + comentarios, o el estado vacío. */
+import T from './T.astro'
+import Icon from './Icon.astro'
+import FeedbackItem from './FeedbackItem.astro'
+import ViewTabs from './ViewTabs.astro'
+import {
+  catLabel, checklist, countLabel, footText, itemsOf, splitItems, suggestionLabel, ui, viewOf,
+  type Category, type PageDef,
+} from '../data/content'
+
+interface Props {
+  page: PageDef
+}
+
+const { page } = Astro.props
+const items = itemsOf( page.key )
+const { required, suggested } = splitItems( items )
+
+/* Los badges por categoría cuentan requisitos: las sugerencias tienen su
+   propio contador y no deberían inflar el del trabajo pedido. */
+const counts = new Map<Category, number>()
+required.forEach(( item ) => counts.set( item.cat, ( counts.get( item.cat ) ?? 0 ) + 1 ))
+
+/* Las pestañas parten por vista; la numeración NO se rehace por pestaña: el
+   número es el nombre del comentario en un ticket y tiene que ser estable. */
+const byView = { desktop: 0, mobile: 0 }
+items.forEach(( item ) => {
+  const view = viewOf( item )
+  if ( view === 'both' ) { byView.desktop++; byView.mobile++ }
+  else byView[ view ]++
+})
+
+const sugViews = new Set( suggested.map( viewOf ))
+const sugOnly = sugViews.size === 1 ? [ ...sugViews ][ 0 ] : undefined
+
+const pending = checklist[ page.key ] ?? []
+---
+
+<header class="page-head">
+  <div class="crumb reveal-right"><T text={page.crumb} /></div>
+  <h1 class="reveal-right" transition:name="page-title"><T text={page.title} /></h1>
+  <p class="lead reveal-right"><T text={page.lead} /></p>
+
+  <div class="meta-row reveal-right">
+    {items.length
+      ? (
+        <Fragment>
+          <span class="badge ok">
+            <Icon name="check" /> <T text={countLabel( required.length )} />
+          </span>
+          {suggested.length > 0 && (
+            <span class="badge tip">
+              <Icon name="bulb" /> <T text={suggestionLabel( suggested.length )} />
+            </span>
+          )}
+          {[ ...counts ].map(([ cat, total ]) => (
+            <span class="badge plain"><T text={catLabel[ cat ]} /> <b>{total}</b></span>
+          ))}
+        </Fragment>
+      )
+      : <span class="badge warn"><Icon name="clock" /> <T text={ui.pending} /></span>}
+  </div>
+
+  {items.length > 0 && (
+    <div class="reveal-right">
+      <ViewTabs desktop={byView.desktop} mobile={byView.mobile} />
+    </div>
+  )}
+</header>
+
+{items.length > 0 && byView.mobile === 0 && (
+  <p class="view-empty" data-view-empty="mobile"><T text={ui.viewEmpty} /></p>
+)}
+{items.length > 0 && byView.desktop === 0 && (
+  <p class="view-empty" data-view-empty="desktop"><T text={ui.viewEmpty} /></p>
+)}
+
+{items.length
+  ? (
+    <Fragment>
+      {required.length > 0 && (
+        <div class="items">
+          {required.map(( item, i ) => <FeedbackItem item={item} index={i + 1} />)}
+        </div>
+      )}
+
+      {suggested.length > 0 && (
+        <Fragment>
+          <section class="sug-head reveal-fade" data-view={sugOnly}>
+            <span class="s-ico"><Icon name="bulb" /></span>
+            <div>
+              <h2><T text={ui.suggestionsTitle} /></h2>
+              <p><T text={ui.suggestionsLead} /></p>
+            </div>
+          </section>
+
+          <div class="items">
+            {suggested.map(( item, i ) => <FeedbackItem item={item} index={i + 1} />)}
+          </div>
+        </Fragment>
+      )}
+    </Fragment>
+  )
+  : (
+    <section class="empty reveal-fade">
+      <div class="e-ico"><Icon name="clock" /></div>
+      <h2><T text={ui.emptyTitle} /></h2>
+      <p><T text={ui.emptyBody} /></p>
+
+      <ul class="checklist">
+        {pending.map(([ title, description ]) => (
+          <li class="reveal-up">
+            <span class="k-ico"><Icon name="dot" /></span>
+            <span>
+              <b><T text={title} /></b>
+              <span><T text={description} /></span>
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+<footer class="page-foot"><T text={footText( page )} /></footer>

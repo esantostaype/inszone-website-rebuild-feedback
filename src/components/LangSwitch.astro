@@ -1,0 +1,11 @@
+---
+/** Toggle ES/EN. El estado real lo maneja src/scripts/i18n.ts. */
+---
+
+<!-- EN primero: es el idioma por defecto del documento, y el que lee el
+     equipo de desarrollo. El aria-pressed de acá es el estado antes de que
+     corra el JS; después lo mantiene i18n.ts. -->
+<div class="lang-switch" role="group" aria-label="Language / Idioma">
+  <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="true">EN</button>
+  <button type="button" class="lang-btn" data-set-lang="es" aria-pressed="false">ES</button>
+</div>

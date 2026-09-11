@@ -1,0 +1,18 @@
+---
+/** Texto bilingüe. Si los dos idiomas coinciden, se emite una sola vez. */
+import type { Pair } from '../data/content'
+
+interface Props {
+  text: Pair
+}
+
+const { text } = Astro.props
+---
+
+{ text.es === text.en
+  ? <Fragment set:html={text.es} />
+  : <Fragment>
+      <span data-lang="es" lang="es" set:html={text.es} />
+      <span data-lang="en" lang="en" set:html={text.en} />
+    </Fragment>
+}

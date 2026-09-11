@@ -1,0 +1,56 @@
+---
+/**
+ * Menú lateral. Se monta con transition:persist desde el layout, así que
+ * sobrevive a la navegación; el estado activo lo refresca el layout en
+ * astro:page-load.
+ */
+import Logo from './Logo.astro'
+import LangSwitch from './LangSwitch.astro'
+import Icon from './Icon.astro'
+import T from './T.astro'
+import { pages, itemsOf, ui } from '../data/content'
+
+interface Props {
+  activeKey: string
+}
+
+const { activeKey } = Astro.props
+
+/* Solo las páginas que ya tienen comentarios. Las otras siguen definidas y
+   generándose: en cuanto una recibe su primer comentario vuelve al menú sola,
+   sin tocar nada acá. */
+const listed = pages.filter(( page ) => itemsOf( page.key ).length > 0 )
+
+/* URLs sin .html: index.html → "/", home.html → "/home". */
+const hrefOf = ( file: string ): string =>
+  file === 'index.html' ? '/' : `/${ file.replace( /\.html$/, '' ) }`
+---
+
+<!-- transition:persist va en el elemento: en un componente sería una prop más. -->
+<aside class="side" transition:persist="sidebar">
+  <div class="side-brand">
+    <Logo />
+    <LangSwitch />
+  </div>
+
+  <nav class="side-nav" aria-label="Sections">
+    <div class="nav-group-label"><T text={ui.sections} /></div>
+
+    {listed.map(( page ) => {
+      const total = itemsOf( page.key ).length
+      return (
+        <a
+          class="nav-item"
+          href={hrefOf( page.file )}
+          aria-current={page.key === activeKey ? 'page' : undefined}
+        >
+          <Icon name={page.icon} />
+          <span class="n-label"><T text={page.nav} /></span>
+          {total
+            ? <span class="count">{total}</span>
+            : <span class="count pending">·</span>}
+        </a>
+      )
+    })}
+  </nav>
+</aside>

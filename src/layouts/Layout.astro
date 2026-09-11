@@ -1,0 +1,136 @@
+---
+/**
+ * Layout compartido.
+ *
+ * Acá vive la demostración de lo que le pedimos al equipo de desarrollo:
+ * <ClientRouter /> declarado una sola vez, transition:persist en el sidebar,
+ * y los scripts reiniciándose en astro:page-load / astro:before-swap.
+ */
+import { ClientRouter } from 'astro:transitions'
+import Sidebar from '../components/Sidebar.astro'
+import { pageTitle, type PageDef } from '../data/content'
+import '../styles/feedback.css'
+
+interface Props {
+  page: PageDef
+}
+
+const { page } = Astro.props
+const title = pageTitle( page )
+---
+
+<html lang="en" data-theme="dark" data-title-es={title.es} data-title-en={title.en}>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title.en}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Navegación client-side con transición entre páginas. Antes de Astro 5
+       este componente se llamaba <ViewTransitions />. -->
+  <ClientRouter />
+
+  <!-- Idioma e indicador de JS antes del primer pintado: sin parpadeo. -->
+  <script is:inline>
+    ( function () {
+      var lang
+      try { lang = localStorage.getItem( 'inszone-feedback-lang' ) } catch ( e ) { }
+      if ( !lang ) {
+        var match = document.cookie.match( /(?:^|; )inszone-feedback-lang=([^;]*)/ )
+        if ( match ) lang = match[ 1 ]
+      }
+      if ( lang === 'en' || lang === 'es' ) {
+        document.documentElement.lang = lang
+        var title = document.documentElement.getAttribute( 'data-title-' + lang )
+        if ( title ) document.title = title
+      }
+      var view
+      try { view = localStorage.getItem( 'inszone-feedback-view' ) } catch ( e ) { }
+      if ( !view ) {
+        var vm = document.cookie.match( /(?:^|; )inszone-feedback-view=([^;]*)/ )
+        if ( vm ) view = vm[ 1 ]
+      }
+      document.documentElement.setAttribute( 'data-view', view === 'mobile' ? 'mobile' : 'desktop' )
+
+      document.documentElement.classList.add( 'js' )
+    })()
+  </script>
+</head>
+
+<body>
+  <div class="app">
+    <!-- El sidebar se marca con transition:persist dentro del componente:
+         no se vuelve a montar en cada navegación, así no parpadea. -->
+    <Sidebar activeKey={page.key} />
+
+    <main class="main">
+      <slot />
+    </main>
+  </div>
+
+  <script>
+    import { initReveal, destroyReveal } from '../scripts/reveal'
+    import { initLightbox, destroyLightbox } from '../scripts/lightbox'
+    import { initCodebox, destroyCodebox } from '../scripts/codebox'
+    import { initSmoothScroll } from '../scripts/smoothScroll'
+    import { initI18n, readLang } from '../scripts/i18n'
+    import { initViewTabs, readView } from '../scripts/viewTabs'
+
+    /* Con navegación client-side el documento se reemplaza y DOMContentLoaded
+       no vuelve a dispararse: todo se reinicia acá. astro:page-load también
+       corre en la primera carga, así que no hace falta duplicar nada. */
+    document.addEventListener( 'astro:page-load', () => {
+      initI18n()
+      initViewTabs()
+      initSmoothScroll()
+      initLightbox()
+      initCodebox()
+      initReveal()
+      markActiveNav()
+    })
+
+    /* Y se desarma antes del swap, para no dejar observers ni listeners
+       colgando de la página anterior. */
+    document.addEventListener( 'astro:before-swap', ( event ) => {
+      destroyReveal()
+      destroyLightbox()
+      destroyCodebox()
+
+      /* El swap reemplaza los atributos del <html> por los del documento
+         entrante, que viene del servidor. Hay que reponer dos cosas o se
+         pierden en cada navegación:
+           · la clase "js", de la que cuelga el estado oculto del reveal
+             (sin ella los elementos ya nacen visibles y no se anima nada);
+           · el idioma elegido, que si no vuelve a "es" y parpadea. */
+      const incoming = event.newDocument.documentElement
+      incoming.classList.add( 'js' )
+
+      const lang = readLang()
+      if ( lang ) incoming.lang = lang
+
+      incoming.setAttribute( 'data-view', readView())
+    })
+
+    /* El sidebar persiste entre páginas, así que su estado activo no se
+       actualiza solo: se marca a mano en cada navegación. */
+    function markActiveNav(): void {
+      const slug = ( path: string ): string =>
+        path.replace( /\/+$/, '' ).split( '/' ).pop() || 'index'
+
+      const here = slug( location.pathname )
+      document.querySelectorAll<HTMLAnchorElement>( '.nav-item' ).forEach(( link ) => {
+        const target = slug( link.getAttribute( 'href' ) ?? '/' )
+        if ( target === here ) link.setAttribute( 'aria-current', 'page' )
+        else link.removeAttribute( 'aria-current' )
+      })
+    }
+  </script>
+</body>
+
+</html>

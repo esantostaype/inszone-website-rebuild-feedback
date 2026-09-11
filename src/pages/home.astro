@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro'
+import FeedbackPage from '../components/FeedbackPage.astro'
+import { pageByKey } from '../data/content'
+
+const page = pageByKey( 'home' )
+---
+
+<Layout page={page}>
+  <FeedbackPage page={page} />
+</Layout>
