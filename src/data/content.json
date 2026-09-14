@@ -106,6 +106,27 @@
       }
     },
     {
+      "file": "our-team.html",
+      "key": "team",
+      "nav": {
+        "es": "Our Team",
+        "en": "Our Team"
+      },
+      "icon": "team",
+      "crumb": {
+        "es": "Página · Our Team",
+        "en": "Page · Our Team"
+      },
+      "title": {
+        "es": "Our Team",
+        "en": "Our Team"
+      },
+      "lead": {
+        "es": "Listado del equipo con su buscador, los filtros por departamento y el modal de perfil.",
+        "en": "Team listing with its search, the department filters and the profile modal."
+      }
+    },
+    {
       "file": "mergers-acquisitions.html",
       "key": "ma",
       "nav": {
@@ -558,32 +579,56 @@
         "view": "both",
         "cat": "layout",
         "title": {
-          "es": "El hero de About Us, como componente para todas las internas",
-          "en": "The About Us hero, as the component for every internal page"
+          "es": "Un solo hero para las páginas internas, con dos variantes",
+          "en": "One hero for the internal pages, with two variants"
         },
         "body": [
           {
-            "es": "El hero de <b>About Us</b> ya está funcionando como debe: estructura, medidas y comportamiento son los correctos, en desktop y en mobile. Ese mismo hero debe usarse en <b>todas las páginas internas que tengan esa estructura</b>.",
-            "en": "The <b>About Us</b> hero already works as it should: structure, measurements and behaviour are all correct, on desktop and on mobile. That same hero must be used on <b>every internal page with that structure</b>."
+            "es": "Las páginas internas usan el mismo hero con dos variantes, y hoy cada una lo resuelve por su cuenta. Debe salir de <b>un único componente</b>, con el interior <b>exactamente igual en todos los casos</b>: breadcrumb, título, texto de abajo y la fila de iconos con sus números y etiquetas. Nada de eso cambia entre una variante y la otra.",
+            "en": "The internal pages use the same hero in two variants, and today each page solves it on its own. It must come from <b>a single component</b>, with the inside <b>exactly the same in every case</b>: breadcrumb, heading, the text below it and the row of icons with their numbers and labels. None of that changes between one variant and the other."
           },
           {
-            "es": "No se trata de copiarlo página por página, sino de extraerlo a <b>un componente reutilizable</b>: recibe el breadcrumb, el título, la bajada y las estadísticas, y el resto ya viene resuelto. Es lo que evita que cada página vuelva a inventar el suyo.",
-            "en": "Not by copying it page by page, but by extracting it into <b>a reusable component</b>: it takes the breadcrumb, the heading, the standfirst and the stats, and everything else comes solved. That is what stops each page from inventing its own again."
+            "es": "<b>Variante con imagen</b> — como está hoy en <b>About Us</b>: el panel a la izquierda y la fotografía a la derecha. Es la referencia del interior y de las medidas.",
+            "en": "<b>Variant with image</b> — as it is today on <b>About Us</b>: the panel on the left and the photo on the right. It is the reference for the inside and for the measurements."
+          },
+          {
+            "es": "<b>Variante sin imagen</b> — <b>Careers</b>, <b>Locations</b> y <b>Contact Us</b>: no llevan fotografía y el panel tiene una <b>forma irregular</b> en el borde inferior. Las tres deben usar <b>la misma forma que Careers</b>, que es la correcta.",
+            "en": "<b>Variant without image</b> — <b>Careers</b>, <b>Locations</b> and <b>Contact Us</b>: no photo, and the panel has an <b>irregular shape</b> along its bottom edge. All three must use <b>the same shape as Careers</b>, which is the correct one."
+          },
+          {
+            "es": "Unificarlo resuelve también lo que hoy pasa en <b>tablet</b>: en Locations el bloque de estadísticas se desplaza hacia abajo y queda cortado contra el borde del hero. Con un solo componente, las tres vistas —desktop, tablet y mobile— se comportan igual en todas las páginas.",
+            "en": "Unifying it also fixes what happens today on <b>tablet</b>: on Locations the stats block drifts downwards and gets clipped against the hero’s edge. With a single component, all three views — desktop, tablet and mobile — behave the same on every page."
+          },
+          {
+            "es": "La única diferencia entre las dos variantes es esa: la imagen y la forma del borde. Todo lo demás —tipografías, tamaños, colores, espaciados, comportamiento— es idéntico, <b>en desktop y en mobile</b>.",
+            "en": "That is the only difference between the two variants: the image and the shape of the edge. Everything else — type, sizes, colours, spacing, behaviour — is identical, <b>on desktop and on mobile</b>."
           }
         ],
         "ok": {
-          "es": "Las páginas internas con este hero renderizan el mismo componente que About Us — no un bloque copiado — y se ven idénticas entre sí en desktop y en mobile.",
-          "en": "The internal pages with this hero render the same component as About Us — not a copied block — and look identical to each other on desktop and on mobile."
+          "es": "Abriendo About Us, Careers, Locations y Contact Us una al lado de la otra: el breadcrumb, el título, el texto y la fila de estadísticas se ven idénticos en las cuatro, en desktop, tablet y mobile —con las estadísticas siempre completas dentro del hero—; Careers, Locations y Contact Us comparten la misma forma irregular; y en el código las cuatro renderizan el mismo componente.",
+          "en": "Opening About Us, Careers, Locations and Contact Us side by side: the breadcrumb, heading, text and stats row look identical on all four, on desktop, tablet and mobile — with the stats always whole inside the hero; Careers, Locations and Contact Us share the same irregular shape; and in the code all four render the same component."
         },
         "refs": [
           {
             "label": {
-              "es": "About Us — el hero ya resuelto",
-              "en": "About Us — the hero already solved"
+              "es": "About Us — el interior del hero",
+              "en": "About Us — the inside of the hero"
             },
             "url": "https://inszoneinsurance-emdash-staging.dev.apps.cloud.inszone.net/about-us"
+          },
+          {
+            "label": {
+              "es": "Careers — la forma irregular",
+              "en": "Careers — the irregular shape"
+            },
+            "url": "https://inszoneinsurance-emdash-staging.dev.apps.cloud.inszone.net/careers"
           }
-        ]
+        ],
+        "img": "images/locations-14-tablet-hero.png",
+        "cap": {
+          "es": "Locations en tablet — la referencia 24 marca el bloque de estadísticas desplazado y cortado contra el borde del hero.",
+          "en": "Locations on tablet — marker 24 points at the stats block drifting down and clipped against the hero’s edge."
+        }
       },
       {
         "cat": "interaccion",
@@ -609,6 +654,53 @@
         "cap": {
           "es": "Mergers & Acquisitions — «Powerful Past, Prosperous Future» con el hover puesto: cambia de fondo aunque no lleve a ninguna parte.",
           "en": "Mergers & Acquisitions — “Powerful Past, Prosperous Future” with hover applied: it changes background even though it leads nowhere."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Estado activo del menú en cada página",
+          "en": "Active menu state on every page"
+        },
+        "body": [
+          {
+            "es": "El ítem del menú que corresponde a la página abierta debe mostrarse con su <b>estado activo</b> —fondo azul claro, su padding y el borde redondeado— tal como está en Figma. Hoy se ve como un enlace más y no hay forma de saber dónde está uno parado.",
+            "en": "The menu item matching the open page must show its <b>active state</b> — light blue background, its padding and the rounded corner — exactly as in Figma. Today it looks like any other link and there is no way to tell where you are."
+          },
+          {
+            "es": "Aplica a todas las páginas: <b>«About Us»</b> en Our Team y en About Us, <b>«Find Location»</b> en Locations y en la ficha de cada oficina, y <b>«Resources»</b> en Blog y en el detalle del post. Es el mismo componente de navegación, así que se resuelve una vez.",
+            "en": "It applies to every page: <b>“About Us”</b> on Our Team and About Us, <b>“Find Location”</b> on Locations and each office’s detail page, and <b>“Resources”</b> on Blog and the post detail. It is the same navigation component, so it is solved once."
+          }
+        ],
+        "ok": {
+          "es": "Recorriendo Our Team, Locations, la ficha de una oficina, Blog y el detalle de un post, en cada una hay exactamente un ítem del menú con el estado activo, y es el que corresponde a esa página.",
+          "en": "Going through Our Team, Locations, an office detail page, Blog and a post detail, each one shows exactly one menu item in the active state, and it is the one matching that page."
+        },
+        "img": "images/our-team-01-hero-align.png",
+        "cap": {
+          "es": "Our Team — la referencia 1 marca «About Us», que debería verse activo y hoy no lo está.",
+          "en": "Our Team — marker 1 points at “About Us”, which should read as active and doesn’t."
+        }
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "El FAQ abre una sola pregunta a la vez, con transición",
+          "en": "The FAQ opens one question at a time, with a transition"
+        },
+        "body": [
+          {
+            "es": "Todos los acordeones de <b>«Frequently Asked Questions»</b> —el del Home, el de la ficha del post, el de Locations y el de la ficha de cada oficina— deben <b>abrir y cerrar con transición</b>, sin saltos.",
+            "en": "Every <b>“Frequently Asked Questions”</b> accordion — on the Home page, the post detail, Locations and each office’s detail page — must <b>open and close with a transition</b>, without jumping."
+          },
+          {
+            "es": "Y debe quedar <b>una sola pregunta abierta</b>: al abrir una, la que estaba abierta se cierra sola.",
+            "en": "And <b>only one question stays open</b>: opening one closes whichever was open."
+          }
+        ],
+        "ok": {
+          "es": "Abriendo las preguntas una tras otra, nunca quedan dos desplegadas al mismo tiempo y ninguna salta de golpe. Vale en las cuatro páginas que tienen FAQ.",
+          "en": "Opening the questions one after another, never are two expanded at the same time and none jumps open. This holds on all four pages with a FAQ."
         }
       }
     ],
@@ -798,28 +890,6 @@
             "url": "https://inszoneinsurance.vercel.app/"
           }
         ]
-      },
-      {
-        "cat": "interaccion",
-        "title": {
-          "es": "FAQ con transición y una sola pregunta abierta",
-          "en": "FAQ with transition and one open question"
-        },
-        "body": [
-          {
-            "es": "El FAQ debe <b>abrir y cerrar con transición</b>, y solo una pregunta puede estar abierta a la vez: <b>al abrir una, la que estaba abierta se cierra sola</b>.",
-            "en": "The FAQ must <b>open and close with a transition</b>, and only one question can be open at a time: <b>opening one closes the one that was open</b>."
-          }
-        ],
-        "ok": {
-          "es": "Abriendo las preguntas una tras otra, nunca quedan dos desplegadas al mismo tiempo y ninguna salta de golpe.",
-          "en": "Opening the questions one after another, two are never expanded at the same time and none snaps open."
-        },
-        "img": "images/home-05-faq.png",
-        "cap": {
-          "es": "Sección «Frequently Asked Questions» del Home.",
-          "en": "“Frequently Asked Questions” section on the Home page."
-        }
       },
       {
         "cat": "interaccion",
@@ -1536,51 +1606,1148 @@
           }
         ]
       }
+    ],
+    "team": [
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ancho del hero alineado con el header",
+          "en": "Hero width aligned with the header"
+        },
+        "body": [
+          {
+            "es": "El hero debe alinearse con los extremos del header: el borde izquierdo con el logo y el derecho con el bloque del teléfono. Hoy se ve más angosto y metido hacia el centro — las guías verticales de la captura marcan dónde tendría que llegar.",
+            "en": "The hero must line up with the header’s edges: its left edge with the logo and its right edge with the phone block. Today it reads narrower and pushed towards the centre — the vertical guides in the screenshot mark where it should reach."
+          },
+          {
+            "es": "Es la misma causa que el comentario general <b>«Una sola estructura de maquetación para todas las páginas»</b>: mientras cada página traiga su propio container, este desajuste se repite.",
+            "en": "It has the same cause as the general comment <b>“One markup structure for every page”</b>: as long as each page brings its own container, this misalignment keeps coming back."
+          }
+        ],
+        "ok": {
+          "es": "El borde izquierdo del hero coincide con el del logo y el derecho con el del número de teléfono.",
+          "en": "The hero’s left edge matches the logo’s and its right edge matches the phone number’s."
+        },
+        "img": "images/our-team-01-hero-align.png",
+        "cap": {
+          "es": "Referencia 2 — las guías marcan los extremos del header contra los del hero.",
+          "en": "Marker 2 — the guides mark the header’s edges against the hero’s."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Espacio en blanco entre el header y el hero",
+          "en": "White gap between the header and the hero"
+        },
+        "body": [
+          {
+            "es": "Entre el header y el hero queda una franja blanca de más, marcada en la captura. Debe reducirse —o eliminarse— para que la separación sea la de Figma: el hero arranca mucho más cerca del header.",
+            "en": "There is an extra white band between the header and the hero, marked in the screenshot. It must be reduced — or removed — so the spacing matches Figma: the hero starts much closer to the header."
+          }
+        ],
+        "ok": {
+          "es": "El borde superior del hero queda a la distancia del header que marca Figma, sin la franja blanca que hoy se ve entre los dos.",
+          "en": "The hero’s top edge sits at the distance from the header that Figma specifies, without the white band visible today."
+        },
+        "img": "images/our-team-02-hero-top-space.png",
+        "cap": {
+          "es": "Referencia 3 — la franja blanca que sobra entre el header y el hero.",
+          "en": "Marker 3 — the leftover white band between the header and the hero."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Color del breadcrumb del hero",
+          "en": "Hero breadcrumb colour"
+        },
+        "body": [
+          {
+            "es": "En el breadcrumb, <b>«Home»</b> y <b>«About Us»</b> deben ir en <code>Primary 300</code>, el color del Design System. <b>«Our Team»</b> se queda con el color del estado actual, que es el que indica dónde está uno parado.",
+            "en": "In the breadcrumb, <b>“Home”</b> and <b>“About Us”</b> must use <code>Primary 300</code>, the Design System colour. <b>“Our Team”</b> keeps the current-state colour, which is what shows where you are."
+          }
+        ],
+        "ok": {
+          "es": "Los dos primeros niveles del breadcrumb son <code>Primary 300</code> y el último mantiene su color propio, distinto de los anteriores.",
+          "en": "The first two breadcrumb levels are <code>Primary 300</code> and the last keeps its own colour, different from the others."
+        },
+        "img": "images/our-team-03-breadcrumb.png",
+        "cap": {
+          "es": "Referencia 4 — el breadcrumb del hero.",
+          "en": "Marker 4 — the hero breadcrumb."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Padding interno del hero",
+          "en": "Hero inner padding"
+        },
+        "body": [
+          {
+            "es": "El hero debe llevar <b>64 px de padding horizontal</b> y <b>48 px de padding superior</b>, según Figma. Ese padding aplica al bloque completo: breadcrumb, título, texto y estadísticas.",
+            "en": "The hero must have <b>64px of horizontal padding</b> and <b>48px of top padding</b>, per Figma. That padding applies to the whole block: breadcrumb, heading, text and stats."
+          }
+        ],
+        "ok": {
+          "es": "Midiendo en el inspector, entre el borde del panel y el breadcrumb hay 64 px de lado y 48 px arriba.",
+          "en": "Measured in the inspector, there are 64px on the sides and 48px on top between the panel’s edge and the breadcrumb."
+        },
+        "img": "images/our-team-04-hero-padding.png",
+        "cap": {
+          "es": "Referencia 5 — el padding interno del hero.",
+          "en": "Marker 5 — the hero’s inner padding."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Icono y espaciado de las estadísticas",
+          "en": "Stats icon and spacing"
+        },
+        "body": [
+          {
+            "es": "El icono de <b>«Departments»</b> no es el del diseño: debe reemplazarse por el de Figma.",
+            "en": "The <b>“Departments”</b> icon is not the one in the design: it must be replaced with the Figma one."
+          },
+          {
+            "es": "Además, hay que aumentar ligeramente el <b>espacio horizontal entre una estadística y la siguiente</b>, y el <b>vertical entre el icono, el número y la etiqueta</b>, siguiendo la distribución de Figma.",
+            "en": "On top of that, the <b>horizontal space between one stat and the next</b> and the <b>vertical space between the icon, the number and the label</b> both need a slight increase, following Figma’s layout."
+          }
+        ],
+        "ok": {
+          "es": "El icono de «Departments» es el de Figma, y las cuatro estadísticas quedan con la misma separación entre sí y con el mismo respiro entre icono, número y etiqueta.",
+          "en": "The “Departments” icon is the Figma one, and the four stats share the same spacing between them and the same breathing room between icon, number and label."
+        },
+        "img": "images/our-team-05-stats.png",
+        "cap": {
+          "es": "Referencia 6 — las estadísticas del hero.",
+          "en": "Marker 6 — the hero stats."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Encuadre de la foto en el modal de perfil",
+          "en": "Photo framing in the profile modal"
+        },
+        "body": [
+          {
+            "es": "En el modal de perfil, la fotografía está encuadrada demasiado arriba: la cabeza queda al ras del borde del círculo y en algunos perfiles se corta. Debe centrarse dentro de su contenedor para que la cabeza entre completa y el encuadre quede equilibrado.",
+            "en": "In the profile modal, the photo is framed too high: the head sits flush against the circle’s edge and on some profiles it gets cut off. It must be centred inside its container so the head fits whole and the framing stays balanced."
+          }
+        ],
+        "ok": {
+          "es": "Abriendo varios perfiles, en todos queda aire entre el borde superior del círculo y la cabeza, y ninguna se ve cortada.",
+          "en": "Opening several profiles, all of them leave space between the top of the circle and the head, and none is cut off."
+        },
+        "img": "images/our-team-06-modal-photo.png",
+        "cap": {
+          "es": "Referencia 7 — la fotografía dentro del modal de perfil.",
+          "en": "Marker 7 — the photo inside the profile modal."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Superposición y redondeo entre el hero y el contenido",
+          "en": "Overlap and rounding between the hero and the content"
+        },
+        "body": [
+          {
+            "es": "En mobile, la sección blanca de contenido debe <b>superponerse ligeramente sobre el hero</b> y llevar <b>border-radius en sus dos esquinas superiores</b>, como en la referencia. Hoy las dos secciones quedan pegadas a ras, sin el escalón.",
+            "en": "On mobile, the white content section must <b>overlap the hero slightly</b> and carry a <b>border-radius on both of its top corners</b>, as in the reference. Today the two sections meet flush, with no step."
+          }
+        ],
+        "ok": {
+          "es": "En mobile, el borde superior de la sección blanca queda por encima del final del hero, con las dos esquinas redondeadas y el azul del hero asomando por detrás.",
+          "en": "On mobile, the white section’s top edge sits above the end of the hero, with both corners rounded and the hero’s blue showing behind it."
+        },
+        "img": "images/our-team-07-overlap.png",
+        "cap": {
+          "es": "Referencia 8 — la unión entre el hero y la sección blanca en mobile.",
+          "en": "Marker 8 — the seam between the hero and the white section on mobile."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "responsive",
+        "title": {
+          "es": "«View Profile» partido en dos líneas",
+          "en": "“View Profile” breaking onto two lines"
+        },
+        "body": [
+          {
+            "es": "En mobile, el texto del botón <b>«View Profile»</b> se parte en dos líneas y desbalancea la card. Debe entrar completo en una sola línea.",
+            "en": "On mobile, the <b>“View Profile”</b> button label breaks onto two lines and unbalances the card. It must fit on a single line."
+          }
+        ],
+        "ok": {
+          "es": "A 375 px de ancho, «View Profile» se lee en una sola línea en todas las cards del listado.",
+          "en": "At 375px wide, “View Profile” reads on a single line on every card in the listing."
+        },
+        "img": "images/our-team-08-view-profile.png",
+        "cap": {
+          "es": "Referencia 9 — el botón de la card partido en dos líneas.",
+          "en": "Marker 9 — the card button broken onto two lines."
+        }
+      }
+    ],
+    "blog": [
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Quitar las flechas de «Featured Stories»",
+          "en": "Remove the arrows from “Featured Stories”"
+        },
+        "body": [
+          {
+            "es": "La sección <b>«Featured Stories»</b> no lleva desplazamiento horizontal ni se comporta como carrusel, así que las <b>flechas laterales deben eliminarse</b>. Vale para las dos plantillas: el listado del blog y la ficha del post.",
+            "en": "The <b>“Featured Stories”</b> section has no horizontal scrolling and doesn’t behave as a carousel, so the <b>side arrows must be removed</b>. This applies to both templates: the blog listing and the post detail."
+          }
+        ],
+        "ok": {
+          "es": "En el listado y en la ficha de un post, «Featured Stories» no muestra flechas a los costados ni deja arrastrar el contenido.",
+          "en": "On the listing and on a post detail page, “Featured Stories” shows no side arrows and doesn’t let the content be dragged."
+        },
+        "img": "images/blog-01-featured-arrows.png",
+        "cap": {
+          "es": "Listado — referencia 2: las flechas a cada lado de «Featured Stories».",
+          "en": "Listing — marker 2: the arrows on each side of “Featured Stories”."
+        },
+        "shots": [
+          {
+            "img": "images/blog-07-detail-featured-arrows.png",
+            "cap": {
+              "es": "Ficha del post — referencia 10: las mismas flechas en el bloque de Featured Stories.",
+              "en": "Post detail — marker 10: the same arrows on the Featured Stories block."
+            }
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Degradado oscuro de las cards",
+          "en": "Dark gradient on the cards"
+        },
+        "body": [
+          {
+            "es": "El degradado negro de las cards cubre el <b>100% de la altura</b> y apaga la fotografía. Debe concentrarse en la <b>parte inferior</b>, más o menos entre el 70% y el 80%, para que la imagen se siga viendo.",
+            "en": "The cards’ black gradient covers <b>100% of the height</b> and dulls the photo. It must concentrate on the <b>lower part</b>, roughly between 70% and 80%, so the image stays visible."
+          }
+        ],
+        "ok": {
+          "es": "En la mitad superior de cada card la fotografía se ve con su color original, y el oscurecido solo aparece donde está el texto.",
+          "en": "In the top half of each card the photo shows its original colour, and the darkening only appears where the text sits."
+        },
+        "img": "images/blog-02-card-gradient.png",
+        "cap": {
+          "es": "Referencia 3 — el degradado que hoy cubre la card entera.",
+          "en": "Marker 3 — the gradient that currently covers the whole card."
+        }
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Estado hover de las cards del blog",
+          "en": "Hover state on the blog cards"
+        },
+        "body": [
+          {
+            "es": "Al pasar el mouse sobre una publicación, la card debe aplicar un <b>overlay azul</b> como el de Figma: la fotografía sigue viéndose, pero el tono general cambia para indicar que el elemento es interactivo.",
+            "en": "Hovering a post, the card must apply a <b>blue overlay</b> like the one in Figma: the photo stays visible, but the overall tone shifts to signal the element is interactive."
+          },
+          {
+            "es": "En ese mismo estado, el <b>badge de categoría cambia de color</b> — hoy conserva el del estado normal — y el bloque de texto con efecto glass se tiñe <b>ligeramente hacia el azul</b>. Los tres cambios ocurren juntos, en el mismo hover.",
+            "en": "In that same state, the <b>category badge changes colour</b> — today it keeps the normal-state one — and the glass text block tints <b>slightly towards blue</b>. All three changes happen together, on the same hover."
+          }
+        ],
+        "ok": {
+          "es": "Con el mouse sobre una card: la imagen se tiñe de azul sin desaparecer, el badge de categoría cambia de color respecto del estado normal y el bloque de texto acompaña ese tono. Al salir, todo vuelve al estado inicial.",
+          "en": "With the mouse over a card: the image tints blue without disappearing, the category badge changes colour from its normal state and the text block follows that tone. On leaving, everything returns to the initial state."
+        },
+        "img": "images/blog-03-card-hover.png",
+        "cap": {
+          "es": "Referencia 5 — el badge de categoría, que debe cambiar de color en hover.",
+          "en": "Marker 5 — the category badge, which must change colour on hover."
+        }
+      },
+      {
+        "view": "both",
+        "cat": "layout",
+        "title": {
+          "es": "Grosor del trazo en «Explore by Category»",
+          "en": "Stroke weight in “Explore by Category”"
+        },
+        "body": [
+          {
+            "es": "El borde del tab activo <b>«All»</b> no tiene el mismo grosor que la línea que separa los tabs del contenido, y en mobile el propio contorno del tab cambia de grosor entre un lado y otro. Debe ser <b>un único grosor en todo el componente</b>, como en Figma.",
+            "en": "The active <b>“All”</b> tab’s border doesn’t match the weight of the line separating the tabs from the content, and on mobile the tab’s own outline changes weight from one side to another. It must be <b>a single weight across the whole component</b>, as in Figma."
+          }
+        ],
+        "ok": {
+          "es": "En desktop y en mobile, el contorno del tab activo y la línea divisoria miden lo mismo, y el contorno mantiene ese grosor en los cuatro lados.",
+          "en": "On desktop and on mobile, the active tab’s outline and the divider line measure the same, and the outline keeps that weight on all four sides."
+        },
+        "img": "images/blog-04-category-tab-stroke.png",
+        "cap": {
+          "es": "Desktop — referencia 6: el tab «All» contra la línea divisoria.",
+          "en": "Desktop — marker 6: the “All” tab against the divider line."
+        },
+        "shots": [
+          {
+            "img": "images/blog-14-mobile-category-tab.png",
+            "cap": {
+              "es": "Mobile — referencia 17: el contorno del tab activo con grosor desparejo.",
+              "en": "Mobile — marker 17: the active tab’s outline with uneven weight."
+            }
+          }
+        ]
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Acceso a todas las categorías cuando no entran",
+          "en": "Reaching every category when they don’t fit"
+        },
+        "body": [
+          {
+            "es": "En <b>«Explore by Category»</b> las categorías exceden el ancho visible y no hay forma clara de llegar a las que quedan fuera. Debe poder recorrerse la lista completa: con rueda o trackpad, con arrastre horizontal, o con controles equivalentes.",
+            "en": "In <b>“Explore by Category”</b> the categories overflow the visible width and there is no clear way to reach the ones left outside. The full list must be reachable: with wheel or trackpad, with horizontal drag, or with equivalent controls."
+          }
+        ],
+        "ok": {
+          "es": "Se puede llegar a la última categoría de la lista sin usar el teclado ni redimensionar la ventana, y queda visible que hay más contenido hacia la derecha.",
+          "en": "The last category in the list can be reached without using the keyboard or resizing the window, and it is visible that there is more content to the right."
+        },
+        "img": "images/blog-05-category-scroll.png",
+        "cap": {
+          "es": "Referencia 7 — las categorías cortadas contra el borde derecho.",
+          "en": "Marker 7 — the categories cut off against the right edge."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Intensidad del glass en el bloque de texto",
+          "en": "Glass intensity on the text block"
+        },
+        "body": [
+          {
+            "es": "El efecto glass del bloque de texto de las cards está <b>demasiado cargado y opaco</b> y tapa la fotografía. Debe bajarse: más ligero y más transparente, de modo que la imagen se siga leyendo por detrás.",
+            "en": "The glass effect on the cards’ text block is <b>too heavy and opaque</b> and hides the photo. It must come down: lighter and more transparent, so the image still reads behind it."
+          }
+        ],
+        "ok": {
+          "es": "Detrás del bloque de texto se distingue la fotografía, no una superficie plana.",
+          "en": "Behind the text block the photo can be made out, not a flat surface."
+        },
+        "img": "images/blog-06-card-glass.png",
+        "cap": {
+          "es": "Referencias 8 y 9 — el bloque de texto con el glass actual.",
+          "en": "Markers 8 and 9 — the text block with the current glass."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ficha del post: color de la fecha y el tiempo de lectura",
+          "en": "Post detail: date and reading-time colour"
+        },
+        "body": [
+          {
+            "es": "En las cards de <b>«Featured Stories»</b> de la ficha del post, el texto <b>y los iconos</b> de fecha y tiempo de lectura deben ir en <b>blanco</b>, para tener el contraste que muestra Figma.",
+            "en": "On the <b>“Featured Stories”</b> cards of the post detail page, the text <b>and the icons</b> for date and reading time must be <b>white</b>, to get the contrast Figma shows."
+          }
+        ],
+        "ok": {
+          "es": "Sobre la imagen de la card, la fecha, el tiempo de lectura y sus dos iconos se leen en blanco.",
+          "en": "Over the card image, the date, the reading time and both icons read in white."
+        },
+        "img": "images/blog-08-detail-meta-color.png",
+        "cap": {
+          "es": "Referencia 11 — la fila de fecha y tiempo de lectura.",
+          "en": "Marker 11 — the date and reading-time row."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ficha del post: transición del CTA sobre la imagen",
+          "en": "Post detail: CTA transition over the image"
+        },
+        "body": [
+          {
+            "es": "En el CTA, el bloque azul termina contra la fotografía con un <b>corte recto</b>. Debe reemplazarse por un <b>degradado</b> que funda el azul con la imagen, de modo que la unión se lea integrada y no como dos rectángulos pegados.",
+            "en": "In the CTA, the blue block meets the photo with a <b>hard edge</b>. It must be replaced by a <b>gradient</b> blending the blue into the image, so the seam reads as integrated instead of two rectangles stuck together."
+          }
+        ],
+        "ok": {
+          "es": "Entre el bloque azul y la fotografía no se distingue una línea de corte: el color se desvanece progresivamente sobre la imagen.",
+          "en": "No cut line can be made out between the blue block and the photo: the colour fades progressively over the image."
+        },
+        "img": "images/blog-09-cta-gradient.png",
+        "cap": {
+          "es": "Referencia 12 — el corte recto entre el bloque azul y la fotografía.",
+          "en": "Marker 12 — the hard edge between the blue block and the photo."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ficha del post: «Insurance» repetido en el título del CTA",
+          "en": "Post detail: “Insurance” repeated in the CTA heading"
+        },
+        "body": [
+          {
+            "es": "El título del CTA repite la palabra <b>«Insurance»</b>. Debe aparecer una sola vez.",
+            "en": "The CTA heading repeats the word <b>“Insurance”</b>. It must appear only once."
+          }
+        ],
+        "ok": {
+          "es": "El título del CTA se lee sin la palabra repetida.",
+          "en": "The CTA heading reads without the repeated word."
+        },
+        "img": "images/blog-10-cta-duplicate-text.png",
+        "cap": {
+          "es": "Referencia 13 — el título del CTA con la palabra duplicada.",
+          "en": "Marker 13 — the CTA heading with the duplicated word."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ficha del post: color del borde del FAQ",
+          "en": "Post detail: FAQ border colour"
+        },
+        "body": [
+          {
+            "es": "El trazo del acordeón del FAQ debe ir en <code>Neutral 300</code>, el color del Design System y el de la referencia de Figma.",
+            "en": "The FAQ accordion’s stroke must use <code>Neutral 300</code>, the Design System colour and the one in the Figma reference."
+          }
+        ],
+        "ok": {
+          "es": "El borde del acordeón es <code>Neutral 300</code> en todas sus preguntas, abiertas y cerradas.",
+          "en": "The accordion border is <code>Neutral 300</code> on every question, open and closed."
+        },
+        "img": "images/blog-11-faq-border.png",
+        "cap": {
+          "es": "Referencia 14 — el borde del acordeón del FAQ.",
+          "en": "Marker 14 — the FAQ accordion border."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ficha del post: espacio entre el CTA y el FAQ",
+          "en": "Post detail: space between the CTA and the FAQ"
+        },
+        "body": [
+          {
+            "es": "Entre el bloque del CTA y la sección <b>«Frequently Asked Questions»</b> falta aire: el espacio vertical debe aumentarse hasta el que muestra Figma.",
+            "en": "There isn’t enough room between the CTA block and the <b>“Frequently Asked Questions”</b> section: the vertical space must grow to the one Figma shows."
+          }
+        ],
+        "ok": {
+          "es": "El espacio entre el final del CTA y el título del FAQ coincide con el de Figma y se lee como una separación entre secciones, no como continuidad.",
+          "en": "The space between the end of the CTA and the FAQ heading matches Figma’s and reads as a separation between sections, not as continuity."
+        },
+        "img": "images/blog-12-cta-faq-spacing.png",
+        "cap": {
+          "es": "Referencia 15 — la unión entre el CTA y el FAQ.",
+          "en": "Marker 15 — the seam between the CTA and the FAQ."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "responsive",
+        "title": {
+          "es": "Tamaño de «Featured Stories» en mobile",
+          "en": "“Featured Stories” size on mobile"
+        },
+        "body": [
+          {
+            "es": "En mobile, la card principal de <b>«Featured Stories»</b> queda demasiado baja y pierde presencia. Debe aumentar su altura hasta la proporción de Figma, manteniendo bien distribuidos el badge, el título, la descripción, el autor, la fecha y el tiempo de lectura.",
+            "en": "On mobile, the main <b>“Featured Stories”</b> card is too short and loses presence. Its height must grow to Figma’s proportion, keeping the badge, heading, description, author, date and reading time well distributed."
+          }
+        ],
+        "ok": {
+          "es": "La card principal ocupa la proporción de Figma y ninguno de sus elementos queda apretado contra otro ni se recorta.",
+          "en": "The main card takes up Figma’s proportion and none of its elements is squeezed against another or clipped."
+        },
+        "img": "images/blog-13-mobile-featured-size.png",
+        "cap": {
+          "es": "Referencia 16 — la card principal de Featured Stories en mobile.",
+          "en": "Marker 16 — the main Featured Stories card on mobile."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Ficha del post: espaciado del encabezado en mobile",
+          "en": "Post detail: header spacing on mobile"
+        },
+        "body": [
+          {
+            "es": "En la ficha del post, el espacio <b>por encima</b> del título es demasiado grande y el que queda <b>por debajo</b>, entre la categoría y la fila de metadatos, demasiado chico. Hay que redistribuirlo según Figma.",
+            "en": "On the post detail page, the space <b>above</b> the heading is too large and the one <b>below</b> it, between the category and the metadata row, too small. It needs redistributing per Figma."
+          }
+        ],
+        "ok": {
+          "es": "El título, la categoría y la fila de metadatos quedan con la separación de Figma: sin el hueco de arriba y con aire suficiente entre ellos.",
+          "en": "The heading, the category and the metadata row end up with Figma’s spacing: without the gap on top and with enough room between them."
+        },
+        "img": "images/blog-15-mobile-detail-spacing.png",
+        "cap": {
+          "es": "Referencia 19 — el encabezado de la ficha en mobile.",
+          "en": "Marker 19 — the detail page header on mobile."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Ficha del post: posición de la flecha en la tarjeta del autor",
+          "en": "Post detail: arrow position on the author card"
+        },
+        "body": [
+          {
+            "es": "En la tarjeta del autor, el icono de flecha queda <b>demasiado cerca del texto</b>. Debe moverse hacia la esquina superior derecha del bloque, respetando el padding de Figma.",
+            "en": "On the author card, the arrow icon sits <b>too close to the text</b>. It must move towards the block’s top right corner, respecting Figma’s padding."
+          }
+        ],
+        "ok": {
+          "es": "La flecha queda anclada a la esquina superior derecha de la tarjeta, con el padding de Figma entre ella y los bordes, y sin tocar el texto.",
+          "en": "The arrow is anchored to the card’s top right corner, with Figma’s padding between it and the edges, and without touching the text."
+        },
+        "img": "images/blog-16-mobile-author-arrow.png",
+        "cap": {
+          "es": "Referencia 20 — la flecha dentro de la tarjeta del autor.",
+          "en": "Marker 20 — the arrow inside the author card."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Ficha del post: «Featured Stories» sin fondo celeste",
+          "en": "Post detail: “Featured Stories” without the light blue background"
+        },
+        "body": [
+          {
+            "es": "En mobile, la sección <b>«Featured Stories»</b> de la ficha va envuelta en un <b>fondo celeste</b> que no corresponde. Debe quedar sobre el fondo general de la página y alineada con el contenido de arriba, respetando los mismos márgenes laterales.",
+            "en": "On mobile, the detail page’s <b>“Featured Stories”</b> section is wrapped in a <b>light blue background</b> that shouldn’t be there. It must sit on the page’s general background and line up with the content above it, respecting the same side margins."
+          }
+        ],
+        "ok": {
+          "es": "La sección no tiene un fondo propio y su borde izquierdo coincide con el del título del post que está más arriba.",
+          "en": "The section has no background of its own and its left edge lines up with the post heading above it."
+        },
+        "img": "images/blog-17-mobile-featured-bg.png",
+        "cap": {
+          "es": "Referencia 21 — el fondo celeste que envuelve la sección.",
+          "en": "Marker 21 — the light blue background wrapping the section."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Ficha del post: contenedor extra en «Popular Posts»",
+          "en": "Post detail: extra container around “Popular Posts”"
+        },
+        "body": [
+          {
+            "es": "El bloque que engloba el banner <b>«Add Inszone as a preferred source on Google»</b>, el título <b>«Popular Posts»</b> y sus cards debe eliminarse. Los tres elementos van directamente sobre el fondo general de la página, alineados con el resto del contenido.",
+            "en": "The block wrapping the <b>“Add Inszone as a preferred source on Google”</b> banner, the <b>“Popular Posts”</b> heading and its cards must be removed. The three elements go straight onto the page’s general background, aligned with the rest of the content."
+          }
+        ],
+        "ok": {
+          "es": "No hay un contenedor con fondo propio alrededor de ese bloque, y el banner, el título y las cards arrancan en el mismo margen izquierdo que el contenido de arriba.",
+          "en": "There is no container with its own background around that block, and the banner, the heading and the cards start at the same left margin as the content above."
+        },
+        "img": "images/blog-18-mobile-popular-posts.png",
+        "cap": {
+          "es": "Referencia 22 — el contenedor que engloba el banner, el título y las cards.",
+          "en": "Marker 22 — the container wrapping the banner, the heading and the cards."
+        }
+      }
+    ],
+    "locations": [
+      {
+        "view": "both",
+        "cat": "layout",
+        "title": {
+          "es": "Espacio entre el header y el hero",
+          "en": "Space between the header and the hero"
+        },
+        "body": [
+          {
+            "es": "Entre el header y el hero queda <b>demasiado espacio en blanco</b>. En Figma el hero empieza mucho más cerca. Pasa en las dos plantillas —el listado y la ficha de oficina— y también en mobile.",
+            "en": "There is <b>too much white space</b> between the header and the hero. In Figma the hero starts much closer. It happens on both templates — the listing and the office detail — and on mobile too."
+          }
+        ],
+        "ok": {
+          "es": "En el listado y en la ficha, en desktop y en mobile, la distancia entre el borde inferior del header y el borde superior del hero es la de Figma.",
+          "en": "On the listing and on the detail page, on desktop and on mobile, the distance between the header’s bottom edge and the hero’s top edge matches Figma."
+        },
+        "img": "images/locations-01-hero.jpg",
+        "cap": {
+          "es": "Listado — referencia 2: el espacio entre el header y el hero.",
+          "en": "Listing — marker 2: the space between the header and the hero."
+        },
+        "shots": [
+          {
+            "img": "images/locations-05-detail-hero.png",
+            "cap": {
+              "es": "Ficha de oficina — referencia 13: el mismo espacio de más.",
+              "en": "Office detail — marker 13: the same extra space."
+            }
+          },
+          {
+            "img": "images/locations-19-mobile-detail-hero-space.png",
+            "cap": {
+              "es": "Ficha en mobile — referencia 34: el espacio superior antes del hero.",
+              "en": "Detail on mobile — marker 34: the top space before the hero."
+            }
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ancho del hero alineado con el header",
+          "en": "Hero width aligned with the header"
+        },
+        "body": [
+          {
+            "es": "El hero debe alinearse con los extremos del header: el borde izquierdo con el logo y el derecho con el número de teléfono. Hoy se percibe demasiado centrado. Vale igual para la ficha de oficina, donde el hero tiene que seguir las guías del container general de la página.",
+            "en": "The hero must line up with the header’s edges: its left edge with the logo and its right edge with the phone number. Today it reads too centred. The same goes for the office detail page, where the hero has to follow the page’s general container guides."
+          },
+          {
+            "es": "Es la misma causa que el comentario general <b>«Una sola estructura de maquetación para todas las páginas»</b>.",
+            "en": "It has the same cause as the general comment <b>“One markup structure for every page”</b>."
+          }
+        ],
+        "ok": {
+          "es": "En las dos plantillas, el borde izquierdo del hero coincide con el del logo y el derecho con el del teléfono.",
+          "en": "On both templates, the hero’s left edge matches the logo’s and its right edge matches the phone number’s."
+        },
+        "img": "images/locations-01-hero.jpg",
+        "cap": {
+          "es": "Listado — referencia 3: el ancho del hero contra los extremos del header.",
+          "en": "Listing — marker 3: the hero width against the header’s edges."
+        },
+        "shots": [
+          {
+            "img": "images/locations-05-detail-hero.png",
+            "cap": {
+              "es": "Ficha de oficina — referencia 14: la alineación del hero con el container.",
+              "en": "Office detail — marker 14: the hero’s alignment with the container."
+            }
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Padding interno del hero",
+          "en": "Hero inner padding"
+        },
+        "body": [
+          {
+            "es": "El hero del listado debe llevar <b>64 px de padding</b>, tanto vertical como horizontal. Ese padding aplica al bloque completo: breadcrumb, título, descripción y estadísticas.",
+            "en": "The listing hero must have <b>64px of padding</b>, both vertical and horizontal. That padding applies to the whole block: breadcrumb, heading, description and stats."
+          },
+          {
+            "es": "En la <b>ficha de oficina</b> hay que respetar los paddings de Figma por la misma razón: hoy el breadcrumb, el título, los badges y las imágenes se ven demasiado ajustados contra los bordes.",
+            "en": "On the <b>office detail page</b>, Figma’s paddings must be respected for the same reason: today the breadcrumb, heading, badges and images look too tight against the edges."
+          }
+        ],
+        "ok": {
+          "es": "Midiendo en el inspector, entre el borde del panel y el contenido del hero hay 64 px por los cuatro lados en el listado, y en la ficha ningún elemento queda pegado al borde.",
+          "en": "Measured in the inspector, there are 64px on all four sides between the panel’s edge and the hero content on the listing, and on the detail page no element sits flush against the edge."
+        },
+        "img": "images/locations-01-hero.jpg",
+        "cap": {
+          "es": "Listado — referencia 4: el padding interno del hero.",
+          "en": "Listing — marker 4: the hero’s inner padding."
+        },
+        "shots": [
+          {
+            "img": "images/locations-06-detail-hero-padding.png",
+            "cap": {
+              "es": "Ficha de oficina — referencia 15: el contenido apretado contra los bordes.",
+              "en": "Office detail — marker 15: the content tight against the edges."
+            }
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Color del breadcrumb",
+          "en": "Breadcrumb colour"
+        },
+        "body": [
+          {
+            "es": "En el listado, <b>«Inszone»</b> debe ir en <code>Primary 300</code>. En la ficha de oficina, <b>«Inszone»</b> y <b>«Locations»</b>; el último nivel —<b>«Anaheim, CA»</b>— mantiene el color del estado actual, que es el que indica dónde está uno parado.",
+            "en": "On the listing, <b>“Inszone”</b> must be <code>Primary 300</code>. On the office detail page, <b>“Inszone”</b> and <b>“Locations”</b>; the last level — <b>“Anaheim, CA”</b> — keeps the current-state colour, which is what shows where you are."
+          }
+        ],
+        "ok": {
+          "es": "Todos los niveles del breadcrumb menos el último son <code>Primary 300</code>, y el último se distingue de ellos.",
+          "en": "Every breadcrumb level but the last is <code>Primary 300</code>, and the last one is distinguishable from them."
+        },
+        "img": "images/locations-01-hero.jpg",
+        "cap": {
+          "es": "Listado — referencia 5: el breadcrumb del hero.",
+          "en": "Listing — marker 5: the hero breadcrumb."
+        },
+        "shots": [
+          {
+            "img": "images/locations-12-detail-breadcrumb.png",
+            "cap": {
+              "es": "Ficha de oficina — referencia 21: los tres niveles del breadcrumb.",
+              "en": "Office detail — marker 21: the three breadcrumb levels."
+            }
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Distribución del bloque de estadísticas del hero",
+          "en": "Distribution of the hero stats block"
+        },
+        "body": [
+          {
+            "es": "Entre el bloque de texto —breadcrumb, título y descripción— y el de estadísticas debe haber una <b>separación automática</b>, no un valor fijo, para que la distribución aguante cualquier ancho.",
+            "en": "Between the text block — breadcrumb, heading and description — and the stats block there must be <b>automatic spacing</b>, not a fixed value, so the layout holds at any width."
+          },
+          {
+            "es": "Lo mismo <b>entre una estadística y la siguiente</b>. Y hay que aumentar ligeramente el espacio vertical entre el icono y su número, como muestra Figma.",
+            "en": "The same <b>between one stat and the next</b>. And the vertical space between each icon and its number needs a slight increase, as Figma shows."
+          }
+        ],
+        "ok": {
+          "es": "Cambiando el ancho de la ventana, la separación entre el texto y las estadísticas y la que hay entre cada estadística se reparten solas, sin que ninguna quede pegada a otra.",
+          "en": "Changing the window width, the spacing between the text and the stats and between each stat redistributes on its own, with none ending up stuck to another."
+        },
+        "img": "images/locations-01-hero.jpg",
+        "cap": {
+          "es": "Referencias 6 y 7 — la distribución del hero y de sus estadísticas.",
+          "en": "Markers 6 and 7 — the hero’s distribution and its stats."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Padding superior de la sección del mapa",
+          "en": "Top padding of the map section"
+        },
+        "body": [
+          {
+            "es": "La sección del buscador y el mapa debe llevar <b>48 px de padding superior</b>, como en la referencia.",
+            "en": "The search and map section must have <b>48px of top padding</b>, as in the reference."
+          }
+        ],
+        "ok": {
+          "es": "Entre el final del hero y el campo de búsqueda hay 48 px medidos en el inspector.",
+          "en": "There are 48px between the end of the hero and the search field, measured in the inspector."
+        },
+        "img": "images/locations-02-map-cards.png",
+        "cap": {
+          "es": "Referencia 8 — el espacio entre el hero y el buscador.",
+          "en": "Marker 8 — the space between the hero and the search field."
+        }
+      },
+      {
+        "view": "both",
+        "cat": "layout",
+        "title": {
+          "es": "Orden alfabético del listado de oficinas",
+          "en": "Alphabetical order of the office listing"
+        },
+        "body": [
+          {
+            "es": "El listado arranca en <b>«Yuma, AZ»</b> y más abajo aparecen oficinas con «A». Las cards deben ordenarse <b>alfabéticamente</b>, de la A en adelante. Pasa igual en mobile, donde la lista empieza con «Yuma, AZ» y sigue con «Yucca Valley, CA».",
+            "en": "The listing starts at <b>“Yuma, AZ”</b> and offices starting with “A” appear further down. The cards must be sorted <b>alphabetically</b>, from A onwards. The same happens on mobile, where the list starts with “Yuma, AZ” and continues with “Yucca Valley, CA”."
+          }
+        ],
+        "ok": {
+          "es": "En desktop y en mobile, la primera card del listado empieza con A y el orden se mantiene ascendente hasta el final.",
+          "en": "On desktop and on mobile, the first card in the listing starts with A and the order stays ascending to the end."
+        },
+        "img": "images/locations-02-map-cards.png",
+        "cap": {
+          "es": "Desktop — referencia 9: el listado arrancando en «Yuma, AZ».",
+          "en": "Desktop — marker 9: the listing starting at “Yuma, AZ”."
+        },
+        "shots": [
+          {
+            "img": "images/locations-17-mobile-cards-order.png",
+            "cap": {
+              "es": "Mobile — referencia 32: el mismo orden invertido.",
+              "en": "Mobile — marker 32: the same reversed order."
+            }
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Espacio entre el mapa y el FAQ",
+          "en": "Space between the map and the FAQ"
+        },
+        "body": [
+          {
+            "es": "Entre el bloque de búsqueda y mapa y la sección <b>«Frequently Asked Questions»</b> sobra espacio en blanco. Debe reducirse al que muestra Figma.",
+            "en": "There is too much white space between the search-and-map block and the <b>“Frequently Asked Questions”</b> section. It must come down to the one Figma shows."
+          }
+        ],
+        "ok": {
+          "es": "El espacio entre el final del mapa y el título del FAQ coincide con el de Figma.",
+          "en": "The space between the end of the map and the FAQ heading matches Figma’s."
+        },
+        "img": "images/locations-03-map-faq-space.png",
+        "cap": {
+          "es": "Referencia 10 — el espacio entre el mapa y el FAQ.",
+          "en": "Marker 10 — the space between the map and the FAQ."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Icono de apertura del acordeón del FAQ",
+          "en": "FAQ accordion toggle icon"
+        },
+        "body": [
+          {
+            "es": "El icono que abre y cierra cada pregunta se ve <b>demasiado curvado</b>. Debe reemplazarse por la flecha o chevron más recta y limpia de Figma. El cambio vale para el FAQ del listado <b>y</b> para el de la ficha de oficina.",
+            "en": "The icon that opens and closes each question reads <b>too curved</b>. It must be replaced with the straighter, cleaner arrow or chevron from Figma. The change applies to the listing’s FAQ <b>and</b> to the office detail’s."
+          }
+        ],
+        "ok": {
+          "es": "El icono del acordeón es el chevron de Figma en las dos páginas.",
+          "en": "The accordion icon is Figma’s chevron on both pages."
+        },
+        "img": "images/locations-04-faq-icon.png",
+        "cap": {
+          "es": "Listado — referencia 11: el icono actual del acordeón.",
+          "en": "Listing — marker 11: the accordion’s current icon."
+        },
+        "shots": [
+          {
+            "img": "images/locations-13-detail-faq.png",
+            "cap": {
+              "es": "Ficha de oficina — referencia 22: el mismo icono.",
+              "en": "Office detail — marker 22: the same icon."
+            }
+          }
+        ]
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ficha: colores de los botones informativos",
+          "en": "Detail: colours of the informational buttons"
+        },
+        "body": [
+          {
+            "es": "Los botones <b>«Licensed in California»</b>, <b>«4.8 Average Rating»</b> y <b>«28 Team Members»</b> no tienen los colores de Figma. Hay que revisar el fondo, el borde y el contraste del grupo completo.",
+            "en": "The <b>“Licensed in California”</b>, <b>“4.8 Average Rating”</b> and <b>“28 Team Members”</b> buttons don’t use Figma’s colours. The background, border and contrast of the whole group need reviewing."
+          }
+        ],
+        "ok": {
+          "es": "Los tres botones coinciden con Figma en fondo, borde y color de texto, y se leen como un grupo homogéneo.",
+          "en": "All three buttons match Figma in background, border and text colour, and read as one consistent group."
+        },
+        "img": "images/locations-07-detail-buttons.png",
+        "cap": {
+          "es": "Referencia 16 — el grupo de botones informativos.",
+          "en": "Marker 16 — the group of informational buttons."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ficha: espaciado entre secciones",
+          "en": "Detail: spacing between sections"
+        },
+        "body": [
+          {
+            "es": "El espacio vertical entre bloques no sigue el ritmo de Figma, sobre todo entre el contenido introductorio, <b>«Services Offered»</b> y <b>«Meet Your Local Team»</b>. Debe quedar un ritmo vertical consistente entre todas las secciones.",
+            "en": "The vertical space between blocks doesn’t follow Figma’s rhythm, especially between the intro content, <b>“Services Offered”</b> and <b>“Meet Your Local Team”</b>. A consistent vertical rhythm must hold across all sections."
+          }
+        ],
+        "ok": {
+          "es": "La distancia entre el final de una sección y el título de la siguiente es la misma a lo largo de toda la ficha.",
+          "en": "The distance between the end of one section and the next section’s heading is the same throughout the detail page."
+        },
+        "img": "images/locations-08-detail-sections.png",
+        "cap": {
+          "es": "Referencia 17 — el espaciado entre las secciones de la ficha.",
+          "en": "Marker 17 — the spacing between the detail page’s sections."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ficha: bordes de los ítems y los badges",
+          "en": "Detail: borders on the items and badges"
+        },
+        "body": [
+          {
+            "es": "Los ítems informativos y las etiquetas de <b>«Services Offered»</b> llevan un <b>borde sólido marcado</b> que en Figma no existe: ahí el tratamiento es más suave, sin contorno.",
+            "en": "The informational items and the <b>“Services Offered”</b> tags carry a <b>hard solid border</b> that doesn’t exist in Figma: there the treatment is softer, with no outline."
+          }
+        ],
+        "ok": {
+          "es": "Ni los ítems informativos ni las etiquetas de «Services Offered» muestran un contorno sólido.",
+          "en": "Neither the informational items nor the “Services Offered” tags show a solid outline."
+        },
+        "img": "images/locations-09-detail-borders.png",
+        "cap": {
+          "es": "Referencia 18 — los bordes de los ítems y los badges.",
+          "en": "Marker 18 — the borders on the items and badges."
+        }
+      },
+      {
+        "cat": "layout",
+        "title": {
+          "es": "Ficha: grosor de los iconos",
+          "en": "Detail: icon stroke weight"
+        },
+        "body": [
+          {
+            "es": "Los iconos de sección se ven <b>más gruesos</b> que en el diseño. Deben usar el mismo trazo que Figma: <b>1.5 px</b>.",
+            "en": "The section icons read <b>heavier</b> than in the design. They must use the same stroke as Figma: <b>1.5px</b>."
+          }
+        ],
+        "ok": {
+          "es": "Inspeccionando un icono de sección, su <code>stroke-width</code> es 1.5.",
+          "en": "Inspecting a section icon, its <code>stroke-width</code> is 1.5."
+        },
+        "img": "images/locations-10-detail-icons.png",
+        "cap": {
+          "es": "Referencia 19 — los iconos de sección.",
+          "en": "Marker 19 — the section icons."
+        }
+      },
+      {
+        "cat": "interaccion",
+        "title": {
+          "es": "Ficha: botones laterales",
+          "en": "Detail: side buttons"
+        },
+        "body": [
+          {
+            "es": "<b>«Get a Quote»</b> y <b>«Contact This Office»</b> deben igualar los colores y la animación de Figma. Además, <b>«Contact This Office»</b> tiene que perder el borde sólido.",
+            "en": "<b>“Get a Quote”</b> and <b>“Contact This Office”</b> must match Figma’s colours and animation. On top of that, <b>“Contact This Office”</b> has to lose its solid border."
+          }
+        ],
+        "ok": {
+          "es": "Los dos botones coinciden con Figma en color y en su transición al pasar el mouse, y «Contact This Office» no muestra contorno.",
+          "en": "Both buttons match Figma in colour and in their hover transition, and “Contact This Office” shows no outline."
+        },
+        "img": "images/locations-11-detail-side-buttons.png",
+        "cap": {
+          "es": "Referencia 20 — los dos botones laterales.",
+          "en": "Marker 20 — the two side buttons."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Redondeo del hero y superposición de la sección siguiente",
+          "en": "Hero rounding and overlap of the next section"
+        },
+        "body": [
+          {
+            "es": "En mobile, el hero debe llevar <b>border radius en sus esquinas inferiores</b> y la sección blanca que sigue tiene que <b>superponerse ligeramente</b> sobre él, como en Figma.",
+            "en": "On mobile, the hero must have a <b>border radius on its bottom corners</b> and the white section that follows has to <b>overlap it slightly</b>, as in Figma."
+          }
+        ],
+        "ok": {
+          "es": "El borde inferior del hero se ve redondeado y la sección blanca arranca por encima de ese borde, tapándolo en parte.",
+          "en": "The hero’s bottom edge reads rounded and the white section starts above that edge, partly covering it."
+        },
+        "img": "images/locations-15-mobile-hero.png",
+        "cap": {
+          "es": "Referencia 26 — las esquinas inferiores del hero y la unión con la sección blanca.",
+          "en": "Marker 26 — the hero’s bottom corners and the seam with the white section."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Espacio entre la descripción y las estadísticas",
+          "en": "Space between the description and the stats"
+        },
+        "body": [
+          {
+            "es": "En mobile, el bloque de estadísticas queda <b>pegado a la descripción</b>. Hay que aumentar el espacio entre los dos.",
+            "en": "On mobile, the stats block sits <b>flush against the description</b>. The space between the two needs to grow."
+          }
+        ],
+        "ok": {
+          "es": "Entre la última línea de la descripción y el primer icono de las estadísticas hay aire suficiente para leerlos como dos bloques distintos.",
+          "en": "Between the description’s last line and the first stats icon there is enough room to read them as two separate blocks."
+        },
+        "img": "images/locations-15-mobile-hero.png",
+        "cap": {
+          "es": "Referencia 27 — la descripción contra el bloque de estadísticas.",
+          "en": "Marker 27 — the description against the stats block."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Padding inferior del hero",
+          "en": "Hero bottom padding"
+        },
+        "body": [
+          {
+            "es": "En mobile, las estadísticas quedan <b>demasiado cerca del borde inferior</b> del hero. Hay que aumentar el <code>padding-bottom</code> para dejarles aire debajo.",
+            "en": "On mobile, the stats sit <b>too close to the hero’s bottom edge</b>. The <code>padding-bottom</code> needs to grow to leave room below them."
+          }
+        ],
+        "ok": {
+          "es": "Debajo de las etiquetas de las estadísticas queda espacio antes de que termine el hero, no un corte al ras.",
+          "en": "Below the stat labels there is space before the hero ends, not a flush cut."
+        },
+        "img": "images/locations-15-mobile-hero.png",
+        "cap": {
+          "es": "Referencia 28 — el borde inferior del hero contra las estadísticas.",
+          "en": "Marker 28 — the hero’s bottom edge against the stats."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Línea entre «Use My Location» y el listado",
+          "en": "Line between “Use My Location” and the listing"
+        },
+        "body": [
+          {
+            "es": "La línea horizontal entre <b>«Use My Location»</b> y el listado de cards no está en Figma. Debe eliminarse.",
+            "en": "The horizontal line between <b>“Use My Location”</b> and the card listing isn’t in Figma. It must be removed."
+          }
+        ],
+        "ok": {
+          "es": "Entre «Use My Location» y la primera card no hay ninguna línea divisoria.",
+          "en": "There is no divider line between “Use My Location” and the first card."
+        },
+        "img": "images/locations-15-mobile-hero.png",
+        "cap": {
+          "es": "Referencia 29 — la línea que sobra.",
+          "en": "Marker 29 — the leftover line."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Espacio entre el FAQ y el footer",
+          "en": "Space between the FAQ and the footer"
+        },
+        "body": [
+          {
+            "es": "En mobile, la sección <b>«Frequently Asked Questions»</b> y el footer quedan demasiado juntos. Hay que aumentar el espacio inferior del FAQ.",
+            "en": "On mobile, the <b>“Frequently Asked Questions”</b> section and the footer sit too close together. The FAQ’s bottom spacing needs to grow."
+          }
+        ],
+        "ok": {
+          "es": "Entre la última pregunta del FAQ y el borde superior del footer queda aire, no un corte inmediato.",
+          "en": "Between the FAQ’s last question and the footer’s top edge there is room, not an immediate cut."
+        },
+        "img": "images/locations-16-mobile-faq-footer.png",
+        "cap": {
+          "es": "Referencia 30 — la unión entre el FAQ y el footer.",
+          "en": "Marker 30 — the seam between the FAQ and the footer."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Border radius del contenedor del FAQ",
+          "en": "Border radius of the FAQ container"
+        },
+        "body": [
+          {
+            "es": "El borde del contenedor del acordeón no respeta las esquinas redondeadas: se ve recto, sobre todo arriba y abajo. Debe seguir el <code>border-radius</code> del contenedor, como en Figma.",
+            "en": "The accordion container’s border doesn’t respect the rounded corners: it reads straight, especially at the top and bottom. It must follow the container’s <code>border-radius</code>, as in Figma."
+          }
+        ],
+        "ok": {
+          "es": "El trazo del contenedor acompaña las cuatro esquinas redondeadas, sin tramos rectos en las puntas.",
+          "en": "The container’s stroke follows all four rounded corners, with no straight runs at the tips."
+        },
+        "img": "images/locations-16-mobile-faq-footer.png",
+        "cap": {
+          "es": "Referencia 31 — las esquinas del contenedor del FAQ.",
+          "en": "Marker 31 — the FAQ container’s corners."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "responsive",
+        "title": {
+          "es": "Ficha: distribución de «Our Ratings»",
+          "en": "Detail: “Our Ratings” layout"
+        },
+        "body": [
+          {
+            "es": "En mobile, las cards de <b>«Our Ratings»</b> dejan huecos vacíos al centro y a la derecha. Google, Facebook y Yelp deben redistribuirse en una composición más compacta que aproveche el ancho disponible.",
+            "en": "On mobile, the <b>“Our Ratings”</b> cards leave empty gaps in the centre and on the right. Google, Facebook and Yelp must be redistributed into a more compact layout that uses the available width."
+          }
+        ],
+        "ok": {
+          "es": "Las tres valoraciones ocupan el ancho del contenedor sin huecos vacíos entre ellas ni a los costados.",
+          "en": "The three ratings fill the container width with no empty gaps between them or at the sides."
+        },
+        "img": "images/locations-20-mobile-ratings.png",
+        "cap": {
+          "es": "Referencia 35 — las cards de «Our Ratings» con los huecos.",
+          "en": "Marker 35 — the “Our Ratings” cards with the gaps."
+        }
+      },
+      {
+        "view": "mobile",
+        "cat": "layout",
+        "title": {
+          "es": "Ficha: espacio entre los párrafos y los subtítulos",
+          "en": "Detail: space between paragraphs and subheadings"
+        },
+        "body": [
+          {
+            "es": "En mobile, el final de un párrafo queda pegado al subtítulo siguiente —por ejemplo <b>«Personal Insurance»</b> y <b>«Commercial Insurance»</b>—. Hay que aumentar el espacio vertical entre el texto y el encabezado que lo sigue.",
+            "en": "On mobile, the end of a paragraph sits flush against the next subheading — for example <b>“Personal Insurance”</b> and <b>“Commercial Insurance”</b>. The vertical space between the text and the heading that follows needs to grow."
+          }
+        ],
+        "ok": {
+          "es": "Cada subtítulo se lee separado del párrafo anterior, con más aire arriba que el que lo separa de su propio texto.",
+          "en": "Each subheading reads separated from the paragraph above it, with more room above than below it."
+        },
+        "img": "images/locations-21-mobile-paragraphs.png",
+        "cap": {
+          "es": "Referencia 36 — el párrafo contra el subtítulo siguiente.",
+          "en": "Marker 36 — the paragraph against the following subheading."
+        }
+      }
     ]
   },
   "checklist": {
-    "locations": [
-      [
-        {
-          "es": "Buscador de oficinas",
-          "en": "Office finder"
-        },
-        {
-          "es": "Búsqueda por Zip Code o estado y velocidad de respuesta.",
-          "en": "Search by Zip Code or state, and response speed."
-        }
-      ],
-      [
-        {
-          "es": "Listado y mapa",
-          "en": "Listing and map"
-        },
-        {
-          "es": "Agrupación por estado, paginación y sincronía entre listado y mapa.",
-          "en": "Grouping by state, pagination and sync between listing and map."
-        }
-      ],
-      [
-        {
-          "es": "Ficha de localidad",
-          "en": "Location detail"
-        },
-        {
-          "es": "Datos de contacto, horarios, equipo local y CTA de cotización.",
-          "en": "Contact details, hours, local team and quote CTA."
-        }
-      ],
-      [
-        {
-          "es": "Responsive",
-          "en": "Responsive"
-        },
-        {
-          "es": "Mapa y listado en Tablet y Mobile.",
-          "en": "Map and listing on Tablet and Mobile."
-        }
-      ]
-    ],
     "contact": [
       [
         {
@@ -1620,48 +2787,6 @@
         {
           "es": "Formulario y mapa en Tablet y Mobile.",
           "en": "Form and map on Tablet and Mobile."
-        }
-      ]
-    ],
-    "blog": [
-      [
-        {
-          "es": "Listado de artículos",
-          "en": "Article listing"
-        },
-        {
-          "es": "Filtros por categoría, paginación y tarjetas del listado.",
-          "en": "Category filters, pagination and listing cards."
-        }
-      ],
-      [
-        {
-          "es": "Ficha del post",
-          "en": "Post detail"
-        },
-        {
-          "es": "Tipografía de lectura, imágenes, autor y tiempo de lectura.",
-          "en": "Reading typography, images, author and reading time."
-        }
-      ],
-      [
-        {
-          "es": "Artículos relacionados",
-          "en": "Related articles"
-        },
-        {
-          "es": "Criterio de relación y ubicación del bloque.",
-          "en": "Relation criteria and placement of the block."
-        }
-      ],
-      [
-        {
-          "es": "Responsive",
-          "en": "Responsive"
-        },
-        {
-          "es": "Lectura del artículo en Tablet y Mobile.",
-          "en": "Reading the article on Tablet and Mobile."
         }
       ]
     ]
@@ -1750,7 +2875,8 @@
     "merge": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"12\" r=\"6\"/><circle cx=\"15\" cy=\"12\" r=\"6\"/></svg>",
     "code": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M9.5 7L5 12l4.5 5M14.5 7l4.5 5-4.5 5\"/></svg>",
     "bulb": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M9.5 17.5h5M10 21h4\"/><path d=\"M12 3a6 6 0 013.6 10.8c-.7.5-1.1 1.2-1.1 2H9.5c0-.8-.4-1.5-1.1-2A6 6 0 0112 3z\"/></svg>",
-    "briefcase": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"13\" rx=\"3\"/><path d=\"M9 7V5.5a2 2 0 012-2h2a2 2 0 012 2V7M2.5 12.5h19\"/></svg>"
+    "briefcase": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"2.5\" y=\"7\" width=\"19\" height=\"13\" rx=\"3\"/><path d=\"M9 7V5.5a2 2 0 012-2h2a2 2 0 012 2V7M2.5 12.5h19\"/></svg>",
+    "team": "<svg class=\"ico-svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"7.5\" r=\"3.5\"/><path d=\"M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6\"/></svg>"
   },
   "refSite": "https://inszoneinsurance.vercel.app/"
 }
